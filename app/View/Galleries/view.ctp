@@ -1,0 +1,1 @@
+<?php echo $this->Html->image('/files/gallery/photo/'.$gallery['Gallery']['id'].'/'.$gallery['Gallery']['photo'], array('alt' =>$gallery['Gallery']['title'])) ?>

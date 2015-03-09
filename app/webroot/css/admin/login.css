@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html,body {margin:0;padding:0;height: 100%}
+body { font-family: "Nanum Gothic","나눔고딕","Malgun Gothic","맑은 고딕","굴림",gulim,"돋움",Dotum,Arial,Helvetica, sans-serif;color:#333}
+label {vertical-align:middle;cursor:pointer}
+a img {border:none}
+input {vertical-align:middle}
+fieldset {border:none}
+legend {display:none}
+a{color:#666;text-decoration:none;}
+a:active {color:red}
+a:hover{color:#333;text-decoration:underline;}
+a img {border:none}
+
+h1 {font-size :160%}
+h2 {font-size :140%}
+h3 {font-size :120%}
+h4,h5,h6 {font-size : 100%}
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+
+/* layout */
+footer {clear:both;float:left;width:80%;margin:0 10%;color:#666;text-align: center}
+
+#mom {float:left;width:100%;padding:0}
+
+header h1 {margin:0;padding:7px 15px}
+
+#sl_login_form {margin:10% 0 0}
+
+
+.box {float:left;width:100%;margin:20px 0px;}
+.box_header {float:left;width:100%;border: 1px solid #ddd;margin-bottom: -1px;padding: 10px;
+ 		background-color: #fafafa;
+  	background-image: -moz-linear-gradient(top, #fafafa, #efefef);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#efefef));
+  	background-image: -webkit-linear-gradient(top, #fafafa, #efefef);
+  	background-image: -o-linear-gradient(top, #fafafa, #efefef);
+  	background-image: linear-gradient(to bottom, #fafafa, #efefef);
+  	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#efefef', GradientType=0);
+  	-webkit-box-shadow: none;
+     	-moz-box-shadow: none;
+          box-shadow: none;
+  	-webkit-border-radius: 2px 2px 0px 0px;
+       -moz-border-radius: 2px 2px 0px 0px;
+          	border-radius: 2px 2px 0px 0px;
+	overflow: hidden;
+}
+
+.box_header h2 {font-size: 16px;line-height: 16px;float:left;margin-top: 2px;margin-bottom: 0;color: #646464;font-weight: normal;text-shadow: 0px 1px 0px #fff;}
+.box_header h2 i{margin: 1px 3px 0px 5px;opacity: .4;}
+.box_header .break {border-left: 1px solid #fcfcfc;border-right: 1px solid #ddd;margin: -12px 10px -10px 10px;padding: 12px 0px 10px 0px;	}
+.box_header .box_icon {float:right;margin-top: 1px;}
+.box_header .box_icon i {-webkit-transition: all 0.1s ease-in-out;-moz-transition: all 0.1s ease-in-out;-o-transition: all 0.1s ease-in-out;-ms-transition: all 0.1s ease-in-out;transition: all 0.1s ease-in-out;opacity: .4;}
+.box_header .box_icon i:hover {opacity: .8;}
+.box_header .box_icon a {margin: 0px 5px;}
+.box_content {float:left;width:100%;margin-top: -1px;padding: 10px;border: 1px solid #ddd;background: #fcfcfc;-webkit-border-radius: 0px 0px 2px 2px;-moz-border-radius: 0px 0px 2px 2px;border-radius: 0px 0px 2px 2px;-webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);-moz-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);box-shadow: 0 1px 0px rgba(255, 255, 255, .6);}
+
+
+.radio, .checkbox {width:15px;height:15px}
+
+#sl_log_index {position:relative}
+#sl_log_index .sl_control_box {position:absolute;top:5px;right:20px;z-index:9}
+#sl_log_index .sl_control_box a {margin-left:20px}
+
+/* footer */
+footer address {margin-top:10px }
+
+@media all and (max-width: 768px) {
+	html,body {background:#ccc}
+	header {background:none;border-bottom:0;margin:1% 0}
+	header h1 {margin:2%;padding:0;font-size:1.6em}
+	header h1 a {float:left;background:none;text-indent:0;width:100%;font-weight:bold}
+	header h1 a:hover {text-decoration:none}  
+	header h1 a:active {color:red}
+	header nav.container {width:100%;margin:0;padding:0}
+	header nav ul {width:100%;margin:2% 0 0;padding:0;background:#fff;border-radius:5px}
+	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
+	header nav ul.nav-pills > li + li {margin-left:0}
+	header nav ul li {margin:0;padding:0}
+	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-indent:1em;padding:10px;border-radius:5px}
+	header nav ul li a:hover {text-decoration:none;background:#eee}
+	header nav ul li a:active {color:red}
+	header nav ul li a .glyphicon {margin-right:1em}
+	.nav-pills > li + li {margin:0}
+	#mom {float:left;clear:both;width:100%;margin:0}
+	#main {float:left;margin:0;padding:0;width:100%;padding:3%;border-radius:5px;background:#fff;}
+	.sub_main {clear:both;width:100%}
+	#sl_main_blog li {margin-bottom:10px}
+	#main_main article ul {margin:0;padding:0;list-style:none}
+	#sl_intro_index #sl_intro_right {float:left;width:100%}  
+	header nav ul a:hover {color:#000}
+	header nav ul a:active {color:red}
+	.page-header {float:left;margin:0 0 10px}
+	#sl_intro_index #sl_intro_right, #sl_gallery_index #sl_gallery_right {width:100%;margin:0}
+	#sl_intro_index #sl_intro_left {width:100%}
+	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	header {height:3em;background:#f8f8f8;border-bottom:1px solid #e7e7e7}
+	header nav ul li:first-child {margin-left:0}	
+	#sl_intro_index #sl_intro_right dd {width:200px}
+	footer {height:5em;border-top:1px solid #e7e7e7}
+	#mom {margin:-8em 0 -5em;min-height:100%}
+	#main {padding-top:6em;padding-bottom:5em}
+}
+
+@media all and (min-width: 1025px) {
+	header {height:3em;background:#f8f8f8;border-bottom:1px solid #e7e7e7}
+	header nav {width:80%}
+	#sl_intro_index #sl_intro_right dd {width:200px}
+	footer {height:5em;border-top:1px solid #e7e7e7}
+	#mom {margin:-6em 0 -5em;min-height:100%}
+	#main {padding-top:6em;padding-bottom:5em}
+	.ad_test {height:90px}
+}
+
