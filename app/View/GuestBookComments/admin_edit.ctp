@@ -1,8 +1,8 @@
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(__('Edit Blog'), array('controller' => 'blogs', 'action' => 'edit', $this -> params['id'])); ?>
-<?php $this -> assign('title', __('Edit Blog')); ?>
+<?php $this->Html->addCrumb(__('Guest Book Comment'), array('controller' => 'guest_book_comments', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(__('Edit Guest Book Comment'), array('controller' => 'guest_book_comments', 'action' => 'edit', $this -> params['id'])) ?>
+<?php $this -> assign('title', __('Edit Guest Book Comment')) ?>
 <?php
-echo $this->Form->create('Blog');
+echo $this->Form->create('GuestBookComment');
 echo $this->Form->input('title');
-echo $this->Form->end(__('Save Article'));
+echo $this->Form->end(__('Save Comment'));
 ?>

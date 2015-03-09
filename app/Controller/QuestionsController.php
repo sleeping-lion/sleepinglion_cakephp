@@ -42,7 +42,7 @@ class QuestionsController extends SlAnonController {
 		$this -> loadModel('QuestionComment');
 		$this -> QuestionComment -> recursive = 0;
 		$this -> Paginator -> settings = array('paramType' => 'querystring', 'limit' => 5, 'order' => array('id' => 'desc'));
-		$this -> set('questionComments', $this -> Paginator -> paginate('QuestionComment', array('question_id' => $question['Question']['id'])));		
+		$this -> set('questionComments', $this -> Paginator -> paginate('QuestionComment', array('question_id' => $question['Question']['id'])));
 	}
 
 	/**
@@ -80,6 +80,7 @@ class QuestionsController extends SlAnonController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
+			$this -> Question -> id = $id;
 			if ($this -> Question -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));

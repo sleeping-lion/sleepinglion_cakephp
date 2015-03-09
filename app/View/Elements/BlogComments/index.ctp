@@ -10,13 +10,11 @@
 			<p itemprop="description"><?php echo nl2br($blogComment['BlogComment']['content']) ?></p>
 		</div>
 	</article>
-	<?php endforeach; ?>
-	<?php unset($blogComments); ?>
-	<?php unset($blogComment); ?>
-	<?php else: ?>
-	<p><?php echo __('No Article') ?></p>				
-	<?php endif ?>
+	<?php endforeach ?>
+	<?php unset($blogComments) ?>
+	<?php unset($blogComment) ?>	
 	<div id="sl_index_bottom_menu">
 		<?php echo $this -> App -> pagination($this -> Paginator); ?>
-	</div>
+	</div>	
+	<?php endif ?>
 </section>

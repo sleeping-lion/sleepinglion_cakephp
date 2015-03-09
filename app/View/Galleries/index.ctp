@@ -1,10 +1,9 @@
-<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.fancybox.pack.js','plugin/jquery.uri.js','galleries/index.js'), array('inline' => false)); ?>
-<?php $this -> Html -> css(array('plugin/jquery.fancybox.css'),array('inline' => false)); ?>
-<?php $this -> Html -> addCrumb(__('Galleries'), array('controller' => 'galleries', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Galleries')); ?>
+<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.fancybox.pack.js','plugin/jquery.uri.js','galleries/index.js'), array('inline' => false)) ?>
+<?php $this -> Html -> css(array('plugin/jquery.fancybox.css'),array('inline' => false)) ?>
+<?php $this -> Html -> addCrumb(__('Gallery'), array('controller' => 'galleries', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Gallery')) ?>
 
 <section id="sl_gallery_index">
-	<article class="table-responsive">	
 	<?php if(isset($galleryCategories)): ?>
 	<ol class="nav nav-tabs sl_categories">
 		<?php if(count($galleryCategories)): ?>			
@@ -16,7 +15,6 @@
 		<?php endif ?>
 	</ol>
 	<?php endif ?>
-	</article>
 	<article <?php if(isset($gallery)): ?>itemscope itemtype="http://schema.org/ImageObject"<?php endif ?>>
 	<?php if(isset($gallery)):  ?>
  	<div id="sl_gallery_left">
@@ -62,10 +60,10 @@
 			</div>
 			<a class="next browse right"></a>			
 		</div>
-	</article>
 	<?php else: ?>
 	<p><?php echo __('No Article') ?></p>
-	<?php endif ?>	
+	<?php endif ?>
+	</article>	
 	<div id="sl_index_bottom_menu">
 		<?php echo $this -> App -> pagination($this -> Paginator) ?>
 		<?php echo $this -> Html -> link(__('New Article'), array('action' => 'add','?'=>array('gallery_category_id'=>$galleryCategoryId)),array('class'=>"btn btn-default btn btn-default col-xs-12 col-md-2")) ?>

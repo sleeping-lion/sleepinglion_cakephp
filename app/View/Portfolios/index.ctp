@@ -1,5 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Portfolios'), array('controller' => 'portfolios', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Portfolios')); ?>
+<?php $this -> Html -> addCrumb(__('Portfolio'), array('controller' => 'portfolios', 'action' => 'index')); ?>
+<?php $this -> assign('title', __('Portfolio')); ?>
 <section id="sl_portfolio_index">
 	<?php if(count($portfolios)): ?>	
   <?php foreach($portfolios as $portfolio): ?>

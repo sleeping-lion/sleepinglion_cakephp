@@ -3,122 +3,133 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-02-02 05:19+0000\n"
-"PO-Revision-Date: 2015-02-02 16:26+0900\n"
+"Project-Id-Version: SLBoard\n"
+"POT-Creation-Date: 2015-03-08 14:23+0000\n"
+"PO-Revision-Date: 2015-03-10 00:08+0900\n"
 "Last-Translator: \n"
-"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language-Team: SL <admin@sleepinglion>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 1.5.5\n"
 "Language: korean\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: Controller/BlogCategoriesController.php:31;63;88
 #: Controller/BlogCommentsController.php:31;63;88
-#: Controller/BlogsController.php:21;41;76;108;179;207
+#: Controller/BlogsController.php:21;39;74;106;177;205
 #: Controller/CkeditorAssetsController.php:56;76
 #: Controller/ContactsController.php:36;72;97
 #: Controller/FaqCategoriesController.php:31;63;88
 #: Controller/FaqsController.php:19;48;79;123;154
 #: Controller/GalleriesController.php:24;52;81;130;159
 #: Controller/GalleryCategoriesController.php:31;63;88
+#: Controller/GroupsController.php:31;69;95
 #: Controller/GuestBookCommentsController.php:31;63;88
 #: Controller/GuestBookContentsController.php:31;63;88;118;150;175
-#: Controller/GuestBooksController.php:31;80;105
+#: Controller/GuestBooksController.php:31;82;107
 #: Controller/HistoriesController.php:35;73;99
 #: Controller/IntroController.php:55 Controller/NoticesController.php:31;69;95
 #: Controller/PortfoliosController.php:31;68;93
 #: Controller/QuestionCommentsController.php:31;63;88
 #: Controller/QuestionsController.php:31;80;107
+#: Controller/ResourcesController.php:31;69;95
 #: Controller/SettingsController.php:38;70;95;125;157;182
-#: Controller/UsersController.php:163;195;222;252;284;309
+#: Controller/SlAnonController.php:24;34 Controller/SlController.php:157
+#: Controller/UsersController.php:165;197;224;255;289;315
 msgid "Invalid post"
 msgstr ""
 
 #: Controller/BlogCategoriesController.php:46;67
 #: Controller/BlogCommentsController.php:46;67
-#: Controller/BlogsController.php:160;184
+#: Controller/BlogsController.php:158;182
 #: Controller/ContactsController.php:51;76
 #: Controller/FaqCategoriesController.php:46;67
 #: Controller/FaqsController.php:102;130
 #: Controller/GalleriesController.php:111;137
 #: Controller/GalleryCategoriesController.php:46;67
+#: Controller/GroupsController.php:52;74
 #: Controller/GuestBookCommentsController.php:46;67
 #: Controller/GuestBookContentsController.php:46;67;133;154
-#: Controller/GuestBooksController.php:59;84
+#: Controller/GuestBooksController.php:61;86
 #: Controller/HistoriesController.php:56;78
 #: Controller/NoticesController.php:52;74
 #: Controller/PortfoliosController.php:51;72
 #: Controller/QuestionCommentsController.php:46;67
 #: Controller/QuestionsController.php:58;84
+#: Controller/ResourcesController.php:52;74
 #: Controller/SettingsController.php:53;74;140;161
-#: Controller/UsersController.php:178;199;267;288
+#: Controller/UsersController.php:180;201;272;294
 msgid "The post has been saved."
 msgstr ""
 
 #: Controller/BlogCategoriesController.php:49;70
 #: Controller/BlogCommentsController.php:49;70
-#: Controller/BlogsController.php:163;187
+#: Controller/BlogsController.php:161;185
 #: Controller/CkeditorAssetsController.php:42
 #: Controller/ContactsController.php:54;79
 #: Controller/FaqCategoriesController.php:49;70
 #: Controller/FaqsController.php:105;133
 #: Controller/GalleriesController.php:114;140
 #: Controller/GalleryCategoriesController.php:49;70
+#: Controller/GroupsController.php:55;77
 #: Controller/GuestBookCommentsController.php:49;70
 #: Controller/GuestBookContentsController.php:49;70;136;157
-#: Controller/GuestBooksController.php:62;87
+#: Controller/GuestBooksController.php:64;89
 #: Controller/HistoriesController.php:59;81
 #: Controller/NoticesController.php:55;77
 #: Controller/PortfoliosController.php:54;75
 #: Controller/QuestionCommentsController.php:49;70
 #: Controller/QuestionsController.php:61;87
+#: Controller/ResourcesController.php:55;77
 #: Controller/SettingsController.php:56;77;143;164
-#: Controller/SlController.php:100 Controller/UsersController.php:181;202;291
+#: Controller/SlController.php:117 Controller/UsersController.php:183;204;297
 msgid "The post could not be saved. Please, try again."
 msgstr ""
 
 #: Controller/BlogCategoriesController.php:92
-#: Controller/BlogCommentsController.php:92 Controller/BlogsController.php:211
+#: Controller/BlogCommentsController.php:92 Controller/BlogsController.php:209
 #: Controller/CkeditorAssetsController.php:80
 #: Controller/ContactsController.php:101
 #: Controller/FaqCategoriesController.php:92 Controller/FaqsController.php:158
 #: Controller/GalleriesController.php:163
 #: Controller/GalleryCategoriesController.php:92
+#: Controller/GroupsController.php:99
 #: Controller/GuestBookCommentsController.php:92
 #: Controller/GuestBookContentsController.php:92;179
-#: Controller/GuestBooksController.php:109
+#: Controller/GuestBooksController.php:111
 #: Controller/HistoriesController.php:103 Controller/NoticesController.php:99
 #: Controller/PortfoliosController.php:97
 #: Controller/QuestionCommentsController.php:92
 #: Controller/QuestionsController.php:111
+#: Controller/ResourcesController.php:99
 #: Controller/SettingsController.php:99;186
-#: Controller/UsersController.php:226;313
+#: Controller/UsersController.php:228;320
 msgid "The post has been deleted."
 msgstr ""
 
 #: Controller/BlogCategoriesController.php:94
-#: Controller/BlogCommentsController.php:94 Controller/BlogsController.php:213
+#: Controller/BlogCommentsController.php:94 Controller/BlogsController.php:211
 #: Controller/CkeditorAssetsController.php:82
 #: Controller/ContactsController.php:103
 #: Controller/FaqCategoriesController.php:94 Controller/FaqsController.php:160
 #: Controller/GalleriesController.php:165
 #: Controller/GalleryCategoriesController.php:94
+#: Controller/GroupsController.php:101
 #: Controller/GuestBookCommentsController.php:94
 #: Controller/GuestBookContentsController.php:94;181
-#: Controller/GuestBooksController.php:111
+#: Controller/GuestBooksController.php:113
 #: Controller/HistoriesController.php:105 Controller/NoticesController.php:101
 #: Controller/PortfoliosController.php:99
 #: Controller/QuestionCommentsController.php:94
 #: Controller/QuestionsController.php:113
+#: Controller/ResourcesController.php:101
 #: Controller/SettingsController.php:101;188
-#: Controller/UsersController.php:228;315
+#: Controller/UsersController.php:230;322
 msgid "The post could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/BlogsController.php:17;37
+#: Controller/BlogsController.php:17;35
 msgid "Insert Blog Category First"
 msgstr ""
 
@@ -134,32 +145,37 @@ msgstr ""
 msgid "Insert Gallery Category First"
 msgstr ""
 
-#: Controller/SlController.php:70
+#: Controller/SlAnonController.php:41
+msgid "Invalid password, try again"
+msgstr ""
+
+#: Controller/SlController.php:74
 msgid "Title"
 msgstr "제목"
 
-#: Controller/SlController.php:70
+#: Controller/SlController.php:74 View/Contacts/admin_view.ctp:19
 msgid "Content"
 msgstr "내용"
 
-#: Controller/SlController.php:70
+#: Controller/SlController.php:74
 msgid "Title+Content"
 msgstr "제목+내용"
 
-#: Controller/SlController.php:70 View/Blogs/index_default.ctp:17
+#: Controller/SlController.php:74 View/Blogs/index_default.ctp:17
 #: View/Faqs/index_default.ctp:17 View/Galleries/index_default.ctp:17
+#: View/GuestBooks/admin_index.ctp:16 View/GuestBooks/admin_view.ctp:10
 #: View/GuestBooks/index.ctp:17 View/GuestBooks/view.ctp:10
 #: View/Notices/index.ctp:17 View/Notices/view.ctp:10
-#: View/Questions/admin_index.ctp:15 View/Questions/index.ctp:17
+#: View/Questions/admin_index.ctp:17 View/Questions/index.ctp:17
 #: View/Questions/view.ctp:10
 msgid "Writer"
 msgstr "작성자"
 
-#: Controller/UsersController.php:270
+#: Controller/UsersController.php:275
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:336
+#: Controller/UsersController.php:343
 msgid "Invalid username or password, try again"
 msgstr ""
 
@@ -185,260 +201,295 @@ msgstr ""
 
 #: View/BlogCategories/admin_add.ctp:1 View/BlogCategories/admin_edit.ctp:1
 #: View/BlogCategories/admin_index.ctp:1;2
-#: View/BlogCategories/admin_view.ctp:1
-msgid "Blog Categories"
-msgstr ""
+#: View/BlogCategories/admin_view.ctp:1;2;3 View/Elements/Admin/aside.ctp:21
+msgid "Blog Category"
+msgstr "블로그 분류"
 
 #: View/BlogCategories/admin_add.ctp:2;3
 msgid "Add Blog Category"
-msgstr ""
+msgstr "블로그 분류 작성"
 
 #: View/BlogCategories/admin_add.ctp:7 View/BlogCategories/admin_edit.ctp:7
 #: View/BlogComments/admin_add.ctp:8 View/BlogComments/admin_edit.ctp:7
 #: View/Blogs/add.ctp:14 View/Blogs/admin_add.ctp:8
-#: View/Blogs/admin_edit.ctp:7 View/Blogs/edit.ctp:14 View/Contacts/add.ctp:11
-#: View/Contacts/admin_add.ctp:8 View/Contacts/admin_edit.ctp:8
-#: View/Contacts/edit.ctp:11 View/Faqs/add.ctp:10 View/Faqs/admin_add.ctp:8
-#: View/Faqs/admin_edit.ctp:8 View/Faqs/edit.ctp:10 View/Galleries/add.ctp:11
+#: View/Blogs/admin_edit.ctp:14 View/Blogs/edit.ctp:14
+#: View/Contacts/add.ctp:10 View/Contacts/admin_add.ctp:11
+#: View/Contacts/admin_edit.ctp:11 View/Contacts/edit.ctp:11
+#: View/FaqCategories/admin_add.ctp:7 View/FaqCategories/admin_edit.ctp:7
+#: View/Faqs/add.ctp:10 View/Faqs/admin_add.ctp:10 View/Faqs/admin_edit.ctp:10
+#: View/Faqs/edit.ctp:10 View/Galleries/add.ctp:11
 #: View/Galleries/admin_add.ctp:10 View/Galleries/admin_edit.ctp:10
 #: View/Galleries/edit.ctp:11 View/GalleryCategories/admin_add.ctp:7
-#: View/GalleryCategories/admin_edit.ctp:7
-#: View/GuestBookComments/admin_add.ctp:8
-#: View/GuestBookComments/admin_edit.ctp:7 View/GuestBooks/add.ctp:19
-#: View/GuestBooks/admin_add.ctp:8 View/GuestBooks/admin_edit.ctp:8
-#: View/GuestBooks/edit.ctp:15 View/Histories/add.ctp:11
-#: View/Histories/admin_add.ctp:9 View/Histories/admin_edit.ctp:9
-#: View/Histories/edit.ctp:11 View/NoticeComments/admin_add.ctp:8
-#: View/NoticeComments/admin_edit.ctp:7 View/Portfolios/add.ctp:11
-#: View/Portfolios/admin_add.ctp:9 View/Portfolios/admin_edit.ctp:9
-#: View/Portfolios/edit.ctp:8 View/Questions/add.ctp:19
-#: View/Questions/admin_add.ctp:8 View/Questions/admin_edit.ctp:8
-#: View/Questions/edit.ctp:8 View/Users/add.ctp:12 View/Users/edit.ctp:18
+#: View/GalleryCategories/admin_edit.ctp:7 View/Groups/admin_add.ctp:7
+#: View/Groups/admin_edit.ctp:7 View/GuestBooks/add.ctp:19
+#: View/GuestBooks/admin_add.ctp:19 View/GuestBooks/admin_edit.ctp:15
+#: View/GuestBooks/check_password.ctp:11 View/GuestBooks/edit.ctp:15
+#: View/Histories/add.ctp:11 View/Histories/admin_add.ctp:11
+#: View/Histories/admin_edit.ctp:11 View/Histories/edit.ctp:11
+#: View/NoticeComments/admin_add.ctp:8 View/NoticeComments/admin_edit.ctp:7
+#: View/Notices/add.ctp:9 View/Notices/admin_add.ctp:9
+#: View/Notices/admin_edit.ctp:9 View/Notices/edit.ctp:9
+#: View/Portfolios/add.ctp:11 View/Portfolios/admin_add.ctp:9
+#: View/Portfolios/admin_edit.ctp:9 View/Portfolios/edit.ctp:8
+#: View/QuestionComments/admin_add.ctp:8
+#: View/QuestionComments/admin_edit.ctp:7 View/Questions/add.ctp:20
+#: View/Questions/admin_add.ctp:20 View/Questions/admin_edit.ctp:8
+#: View/Questions/check_password.ctp:6 View/Questions/edit.ctp:8
+#: View/Resources/admin_add.ctp:9 View/Resources/admin_edit.ctp:9
+#: View/Users/add.ctp:12 View/Users/admin_add.ctp:12
+#: View/Users/admin_edit.ctp:18 View/Users/edit.ctp:18
 msgid "Save Article"
 msgstr "제출"
 
 #: View/BlogCategories/admin_edit.ctp:2;3
 msgid "Edit Blog Category"
-msgstr ""
+msgstr "블로그 분류 수정"
 
-#: View/BlogCategories/admin_index.ctp:35 View/Blogs/index.ctp:29
-#: View/Blogs/index_default.ctp:36 View/CkeditorAssets/index.ctp:55
-#: View/Contacts/admin_index.ctp:35 View/Contacts/index.ctp:34
-#: View/Elements/BlogCategories/index.ctp:34
-#: View/Elements/BlogComments/index.ctp:17 View/Elements/Blogs/index.ctp:14
-#: View/Elements/GuestBookComments/index.ctp:17
-#: View/Elements/GuestBooks/index.ctp:13
-#: View/Elements/NoticeComments/index.ctp:17
-#: View/Elements/Notices/index.ctp:13
-#: View/Elements/QuestionComments/index.ctp:17
-#: View/Elements/Questions/index.ctp:13 View/FaqCategories/admin_index.ctp:35
-#: View/Faqs/admin_index.ctp:30 View/Faqs/index_default.ctp:37
-#: View/Galleries/admin_index.ctp:35 View/Galleries/index.ctp:56
-#: View/Galleries/index_default.ctp:36
-#: View/GalleryCategories/admin_index.ctp:35
-#: View/GuestBooks/admin_index.ctp:32 View/GuestBooks/index.ctp:38
+#: View/BlogCategories/admin_index.ctp:15 View/Blogs/admin_index.ctp:15
+#: View/Contacts/admin_index.ctp:15 View/FaqCategories/admin_index.ctp:15
+#: View/Faqs/admin_index.ctp:15 View/Galleries/admin_index.ctp:15
+#: View/GalleryCategories/admin_index.ctp:15 View/Questions/admin_index.ctp:15
+msgid "Id"
+msgstr "아이디"
+
+#: View/BlogCategories/admin_index.ctp:17
+#: View/FaqCategories/admin_index.ctp:17
+#: View/GalleryCategories/admin_index.ctp:17 View/Groups/admin_index.ctp:16
+msgid "Child Count"
+msgstr "하위 게시물수"
+
+#: View/BlogCategories/admin_index.ctp:19 View/Blogs/admin_index.ctp:19
+#: View/Contacts/admin_index.ctp:19 View/FaqCategories/admin_index.ctp:19
+#: View/Faqs/admin_index.ctp:19 View/Galleries/admin_index.ctp:19
+#: View/GalleryCategories/admin_index.ctp:19 View/Groups/admin_index.ctp:18
+#: View/GuestBooks/admin_index.ctp:19 View/Notices/admin_index.ctp:16
+#: View/Questions/admin_index.ctp:20 View/Resources/admin_index.ctp:16
+#: View/Users/admin_index.ctp:18
+msgid "Manage"
+msgstr "관리"
+
+#: View/BlogCategories/admin_index.ctp:35 View/Blogs/admin_index.ctp:35
+#: View/Blogs/view.ctp:23 View/CkeditorAssets/index.ctp:31
+#: View/Contacts/admin_index.ctp:35 View/FaqCategories/admin_index.ctp:35
+#: View/Faqs/admin_index.ctp:32 View/Faqs/index.ctp:32;42;53
+#: View/Galleries/admin_index.ctp:35 View/Galleries/index.ctp:30
+#: View/GalleryCategories/admin_index.ctp:35 View/Groups/admin_index.ctp:32
+#: View/GuestBooks/admin_index.ctp:33 View/GuestBooks/admin_view.ctp:25
+#: View/GuestBooks/confirm_delete.ctp:5 View/GuestBooks/view.ctp:25
+#: View/Histories/admin_view.ctp:22 View/Histories/view.ctp:22
+#: View/Notices/admin_index.ctp:29 View/Notices/view.ctp:24
+#: View/Portfolios/view.ctp:22 View/Questions/admin_index.ctp:37
+#: View/Questions/confirm_delete.ctp:5 View/Questions/view.ctp:23
+#: View/Resources/admin_index.ctp:29 View/Users/admin_index.ctp:32
+msgid "Are you sure you wish to delete this article?"
+msgstr "정말로 삭제합니까?"
+
+#: View/BlogCategories/admin_index.ctp:47 View/Blogs/admin_index.ctp:47
+#: View/Blogs/index.ctp:30 View/Blogs/index_default.ctp:36
+#: View/CkeditorAssets/index.ctp:55;66 View/Contacts/admin_index.ctp:48
+#: View/Contacts/index.ctp:35 View/Elements/BlogCategories/index.ctp:34
+#: View/Elements/Blogs/index.ctp:15 View/Elements/Faqs/index.ctp:15
+#: View/Elements/GuestBooks/index.ctp:15 View/Elements/Notices/index.ctp:15
+#: View/Elements/Questions/index.ctp:15 View/FaqCategories/admin_index.ctp:47
+#: View/Faqs/admin_index.ctp:44 View/Faqs/index.ctp:60
+#: View/Faqs/index_default.ctp:37 View/Galleries/admin_index.ctp:47
+#: View/Galleries/index.ctp:54;64 View/Galleries/index_default.ctp:36
+#: View/GalleryCategories/admin_index.ctp:47 View/Groups/admin_index.ctp:45
+#: View/GuestBooks/admin_index.ctp:45 View/GuestBooks/index.ctp:38
 #: View/Histories/admin_index.ctp:29 View/Histories/index.ctp:30
-#: View/Intro/index.ctp:63 View/Notices/admin_index.ctp:29
+#: View/Intro/index.ctp:64 View/Notices/admin_index.ctp:42
 #: View/Notices/index.ctp:36 View/Portfolios/admin_index.ctp:29
-#: View/Portfolios/index.ctp:17 View/Questions/admin_index.ctp:35
-#: View/Questions/index.ctp:38
+#: View/Portfolios/index.ctp:17 View/Questions/admin_index.ctp:49
+#: View/Questions/index.ctp:38 View/Resources/admin_index.ctp:36
+#: View/Users/admin_index.ctp:45
 msgid "No Article"
-msgstr "해당 게시물이 없습니다"
+msgstr "해당 글이 없습니다."
 
-#: View/BlogCategories/admin_index.ctp:42 View/BlogComments/admin_index.ctp:34
-#: View/Blogs/admin_index.ctp:36 View/Blogs/index.ctp:33
-#: View/Contacts/admin_index.ctp:42 View/Contacts/index.ctp:40
-#: View/FaqCategories/admin_index.ctp:42 View/Faqs/index.ctp:66
-#: View/Galleries/admin_index.ctp:42 View/Galleries/index.ctp:71
+#: View/BlogCategories/admin_index.ctp:54 View/BlogComments/admin_index.ctp:34
+#: View/Blogs/admin_index.ctp:54 View/Blogs/index.ctp:35
+#: View/Blogs/index_default.ctp:44 View/CkeditorAssets/index.ctp:70
+#: View/Contacts/admin_index.ctp:55 View/Contacts/index.ctp:41
+#: View/FaqCategories/admin_index.ctp:54 View/Faqs/admin_index.ctp:51
+#: View/Faqs/index.ctp:66 View/Faqs/index_default.ctp:45
+#: View/Galleries/admin_index.ctp:54 View/Galleries/index.ctp:69
 #: View/Galleries/index_default.ctp:44
-#: View/GalleryCategories/admin_index.ctp:42
-#: View/GuestBookComments/admin_index.ctp:34
-#: View/GuestBooks/admin_index.ctp:39 View/GuestBooks/index.ctp:46
+#: View/GalleryCategories/admin_index.ctp:54 View/Groups/admin_index.ctp:51
+#: View/GuestBooks/admin_index.ctp:52 View/GuestBooks/index.ctp:46
 #: View/Histories/admin_index.ctp:36 View/Histories/index.ctp:38
-#: View/NoticeComments/admin_index.ctp:34 View/Notices/admin_index.ctp:35
+#: View/NoticeComments/admin_index.ctp:34 View/Notices/admin_index.ctp:48
 #: View/Notices/index.ctp:44 View/Portfolios/admin_index.ctp:36
-#: View/Portfolios/index.ctp:21 View/Questions/admin_index.ctp:41
-#: View/Questions/index.ctp:46
+#: View/Portfolios/index.ctp:21 View/QuestionComments/admin_index.ctp:34
+#: View/Questions/admin_index.ctp:55 View/Questions/index.ctp:46
+#: View/Resources/admin_index.ctp:42
 msgid "New Article"
 msgstr "글쓰기"
 
-#: View/BlogCategories/admin_view.ctp:2;3
-msgid "Blog Category"
-msgstr ""
-
 #: View/BlogCategories/admin_view.ctp:7 View/BlogComments/admin_view.ctp:7
 #: View/Blogs/admin_view.ctp:7 View/Blogs/view.ctp:19
-#: View/Contacts/admin_view.ctp:7 View/Contacts/view.ctp:7
+#: View/Contacts/admin_view.ctp:24 View/Contacts/view.ctp:7
 #: View/Elements/BlogComments/view.ctp:45
 #: View/Elements/GuestBookComments/view.ctp:45
 #: View/Elements/NoticeComments/view.ctp:45
 #: View/Elements/QuestionComments/view.ctp:45
 #: View/FaqCategories/admin_view.ctp:7 View/Faqs/admin_view.ctp:7
 #: View/Faqs/view.ctp:7 View/GalleryCategories/admin_view.ctp:7
-#: View/GuestBookComments/admin_view.ctp:7 View/GuestBooks/admin_view.ctp:7
-#: View/GuestBooks/view.ctp:20 View/Histories/admin_view.ctp:18
-#: View/Histories/view.ctp:18 View/NoticeComments/admin_view.ctp:7
-#: View/Notices/admin_view.ctp:18 View/Notices/view.ctp:20
-#: View/Portfolios/admin_view.ctp:18 View/Portfolios/view.ctp:18
-#: View/QuestionComments/admin_view.ctp:7 View/Questions/admin_view.ctp:7
-#: View/Questions/view.ctp:18
+#: View/Groups/admin_view.ctp:18 View/GuestBookComments/admin_view.ctp:7
+#: View/GuestBooks/admin_view.ctp:20 View/GuestBooks/view.ctp:20
+#: View/Histories/admin_view.ctp:18 View/Histories/view.ctp:18
+#: View/NoticeComments/admin_view.ctp:7 View/Notices/admin_view.ctp:18
+#: View/Notices/view.ctp:20 View/Portfolios/admin_view.ctp:18
+#: View/Portfolios/view.ctp:18 View/QuestionComments/admin_view.ctp:7
+#: View/Questions/admin_view.ctp:7 View/Questions/view.ctp:18
+#: View/Resources/admin_view.ctp:18 View/Users/admin_view.ctp:19
 msgid "List"
 msgstr "목록"
 
 #: View/BlogComments/admin_add.ctp:1 View/BlogComments/admin_edit.ctp:1
-#: View/BlogComments/admin_index.ctp:1;2 View/BlogComments/admin_view.ctp:1
-#: View/Blogs/add.ctp:2 View/Blogs/admin_add.ctp:1 View/Blogs/admin_edit.ctp:1
-#: View/Blogs/admin_index.ctp:1;2 View/Blogs/admin_view.ctp:1
+#: View/BlogComments/admin_index.ctp:1;2
+#: View/BlogComments/admin_view.ctp:1;2;3
+msgid "Blog Comment"
+msgstr "블로그 댓글"
+
+#: View/BlogComments/admin_add.ctp:2;3
+msgid "Add Blog Comment"
+msgstr "블로그 댓글 작성"
+
+#: View/BlogComments/admin_edit.ctp:2;3
+msgid "Edit Blog Comment"
+msgstr "블로그 댓글 수정"
+
+#: View/Blogs/add.ctp:2 View/Blogs/admin_add.ctp:1 View/Blogs/admin_edit.ctp:2
+#: View/Blogs/admin_index.ctp:1;2 View/Blogs/admin_view.ctp:1;2;3
 #: View/Blogs/edit.ctp:2 View/Blogs/index.ctp:1;2
-#: View/Blogs/index_default.ctp:1;2 View/Blogs/view.ctp:1
-#: View/Elements/BlogComments/view.ctp:1
-#: View/Elements/GuestBookComments/view.ctp:1
-#: View/Elements/NoticeComments/view.ctp:1
-#: View/Elements/QuestionComments/view.ctp:1
-#: View/GuestBookComments/admin_add.ctp:1
-#: View/GuestBookComments/admin_edit.ctp:1
-#: View/GuestBookComments/admin_index.ctp:1;2
-#: View/GuestBookComments/admin_view.ctp:1
-#: View/QuestionComments/admin_view.ctp:1
-msgid "Blogs"
-msgstr ""
-
-#: View/BlogComments/admin_add.ctp:2;3 View/Blogs/add.ctp:3;4
-#: View/Blogs/admin_add.ctp:2;3 View/GuestBookComments/admin_add.ctp:2;3
-msgid "Add Blog"
-msgstr ""
-
-#: View/BlogComments/admin_edit.ctp:2;3 View/Blogs/admin_edit.ctp:2;3
-#: View/Blogs/edit.ctp:3;4 View/GuestBookComments/admin_edit.ctp:2;3
-msgid "Edit Blog"
-msgstr ""
-
-#: View/BlogComments/admin_view.ctp:2;3 View/Blogs/admin_view.ctp:2;3
-#: View/Blogs/view.ctp:2;3 View/Elements/header.ctp:26
+#: View/Blogs/index_default.ctp:1;2 View/Blogs/view.ctp:1;2;3
+#: View/Elements/header.ctp:26 View/Elements/Admin/aside.ctp:9
 #: View/Elements/BlogCategories/index.ctp:3
-#: View/Elements/BlogComments/view.ctp:2;3 View/Elements/Blogs/index.ctp:2
-#: View/Elements/GuestBookComments/view.ctp:2;3
-#: View/Elements/NoticeComments/view.ctp:2;3
-#: View/Elements/QuestionComments/view.ctp:2;3
-#: View/GuestBookComments/admin_view.ctp:2;3
-#: View/QuestionComments/admin_view.ctp:2;3
+#: View/Elements/BlogComments/view.ctp:1;2;3 View/Elements/Blogs/index.ctp:2
+#: View/Elements/GuestBookComments/view.ctp:1;2;3
+#: View/Elements/NoticeComments/view.ctp:1;2;3
+#: View/Elements/QuestionComments/view.ctp:1;2;3
 msgid "Blog"
 msgstr "블로그"
 
-#: View/Blogs/index_default.ctp:44
-msgid "New Blog"
-msgstr ""
+#: View/Blogs/add.ctp:3;4 View/Blogs/admin_add.ctp:2;3
+msgid "Add Blog"
+msgstr "블로그 작성"
+
+#: View/Blogs/admin_edit.ctp:3;4 View/Blogs/edit.ctp:3;4
+msgid "Edit Blog"
+msgstr "블로그 수정"
+
+#: View/Blogs/admin_index.ctp:17 View/Contacts/admin_index.ctp:17
+#: View/Faqs/admin_index.ctp:17 View/Galleries/admin_index.ctp:17
+#: View/Questions/admin_index.ctp:18
+msgid "Count"
+msgstr "조회"
 
 #: View/Blogs/view.ctp:9 View/Elements/BlogComments/view.ctp:9
 #: View/Elements/GuestBookComments/view.ctp:9
 #: View/Elements/NoticeComments/view.ctp:9
-#: View/Elements/QuestionComments/view.ctp:9 View/GuestBooks/view.ctp:11
+#: View/Elements/QuestionComments/view.ctp:9 View/Groups/admin_view.ctp:11
+#: View/GuestBooks/admin_view.ctp:11 View/GuestBooks/view.ctp:11
 #: View/Histories/admin_view.ctp:11 View/Histories/view.ctp:11
 #: View/Notices/admin_view.ctp:11 View/Notices/view.ctp:11
 #: View/Portfolios/admin_view.ctp:11 View/Portfolios/view.ctp:11
-#: View/Questions/view.ctp:10
+#: View/Questions/view.ctp:10 View/Resources/admin_view.ctp:11
+#: View/Users/admin_view.ctp:18
 msgid "Created_at"
 msgstr "작성일"
 
 #: View/Blogs/view.ctp:22 View/CkeditorAssets/index.ctp:30
-#: View/Faqs/index.ctp:31;41;52 View/Galleries/index.ctp:31
-#: View/GuestBooks/view.ctp:23 View/Histories/admin_view.ctp:21
+#: View/Faqs/index.ctp:31;41;52 View/Galleries/index.ctp:29
+#: View/Groups/admin_view.ctp:21 View/GuestBooks/admin_view.ctp:24;27
+#: View/GuestBooks/view.ctp:24;27 View/Histories/admin_view.ctp:21
 #: View/Histories/view.ctp:21 View/Notices/admin_view.ctp:21
 #: View/Notices/view.ctp:23 View/Portfolios/admin_view.ctp:21
-#: View/Portfolios/view.ctp:21 View/Questions/view.ctp:21
+#: View/Portfolios/view.ctp:21 View/Questions/view.ctp:22;25
+#: View/Resources/admin_view.ctp:21
 msgid "Edit"
 msgstr "수정"
 
 #: View/Blogs/view.ctp:23 View/CkeditorAssets/index.ctp:31
-#: View/Faqs/index.ctp:32;42;53 View/Galleries/index.ctp:32
-#: View/GuestBooks/view.ctp:24 View/Histories/admin_view.ctp:22
+#: View/Faqs/index.ctp:32;42;53 View/Galleries/index.ctp:30
+#: View/Groups/admin_view.ctp:22 View/GuestBooks/admin_view.ctp:25;28
+#: View/GuestBooks/view.ctp:25;28 View/Histories/admin_view.ctp:22
 #: View/Histories/view.ctp:22 View/Notices/admin_view.ctp:22
 #: View/Notices/view.ctp:24 View/Portfolios/admin_view.ctp:22
-#: View/Portfolios/view.ctp:22 View/Questions/view.ctp:22
+#: View/Portfolios/view.ctp:22 View/Questions/view.ctp:23;26
+#: View/Resources/admin_view.ctp:22
 msgid "Delete"
 msgstr "삭제"
 
-#: View/Blogs/view.ctp:23 View/CkeditorAssets/index.ctp:31
-#: View/Faqs/index.ctp:32;42;53 View/Galleries/index.ctp:32
-#: View/GuestBooks/view.ctp:24 View/Histories/view.ctp:22
-#: View/Notices/view.ctp:24 View/Portfolios/view.ctp:22
-#: View/Questions/view.ctp:22
-msgid "Are you sure you wish to delete this article?"
-msgstr ""
-
 #: View/CkeditorAssets/add.ctp:1
-msgid "Ckeditor Assets"
-msgstr ""
+msgid "Ckeditor Asset"
+msgstr "에디터 자원"
 
 #: View/CkeditorAssets/add.ctp:2;3
 msgid "Add Ckeditor Asset"
-msgstr ""
+msgstr "에디터 자원 작성"
 
 #: View/CkeditorAssets/add.ctp:7
 msgid "Save Ckeditor Asset"
-msgstr ""
+msgstr "에디터 자원 저장"
 
-#: View/CkeditorAssets/index.ctp:3;4 View/Galleries/add.ctp:1
-#: View/Galleries/admin_add.ctp:1 View/Galleries/admin_edit.ctp:1
-#: View/Galleries/admin_index.ctp:1;2 View/Galleries/admin_view.ctp:1
-#: View/Galleries/edit.ctp:1 View/Galleries/index.ctp:3;4
-#: View/Galleries/index_default.ctp:1;2
-msgid "Galleries"
-msgstr ""
+#: View/CkeditorAssets/index.ctp:3;4 View/Elements/header.ctp:27
+#: View/Elements/Admin/aside.ctp:8 View/Elements/Galleries/index.ctp:2
+#: View/Galleries/add.ctp:1 View/Galleries/admin_add.ctp:1
+#: View/Galleries/admin_edit.ctp:1 View/Galleries/admin_index.ctp:1;2
+#: View/Galleries/admin_view.ctp:1;2;3 View/Galleries/edit.ctp:1
+#: View/Galleries/index.ctp:3;4 View/Galleries/index_default.ctp:1;2
+msgid "Gallery"
+msgstr "사진첩"
 
 #: View/CkeditorAssets/index.ctp:14 View/Faqs/index.ctp:14
-#: View/Galleries/index.ctp:15
+#: View/Galleries/index.ctp:14
 msgid "No Category"
-msgstr ""
+msgstr "분류가 없습니다"
 
-#: View/Contacts/add.ctp:1 View/Contacts/admin_index.ctp:1;2
-#: View/Contacts/admin_view.ctp:1 View/Contacts/edit.ctp:1
-#: View/Contacts/index.ctp:1;2 View/Contacts/view.ctp:1;3
-msgid "Contacts"
-msgstr ""
-
-#: View/Contacts/add.ctp:2;3
-msgid "Add Contact"
-msgstr ""
-
-#: View/Contacts/admin_add.ctp:1 View/Contacts/admin_edit.ctp:1
-#: View/Questions/add.ctp:1 View/Questions/admin_add.ctp:1
-#: View/Questions/admin_edit.ctp:1 View/Questions/admin_index.ctp:1;2
-#: View/Questions/admin_view.ctp:1 View/Questions/edit.ctp:1
-#: View/Questions/index.ctp:1;2 View/Questions/view.ctp:1
-msgid "Questions"
-msgstr ""
-
-#: View/Contacts/admin_add.ctp:2;3 View/Questions/add.ctp:2;3
-#: View/Questions/admin_add.ctp:2;3
-msgid "Add Question"
-msgstr ""
-
-#: View/Contacts/admin_edit.ctp:2;3 View/Questions/admin_edit.ctp:2;3
-#: View/Questions/edit.ctp:2;3
-msgid "Edit Question"
-msgstr ""
-
-#: View/Contacts/admin_view.ctp:2;3 View/Contacts/view.ctp:2
-#: View/Elements/header.ctp:25
+#: View/Contacts/add.ctp:1;2 View/Contacts/admin_add.ctp:1
+#: View/Contacts/admin_edit.ctp:1 View/Contacts/admin_index.ctp:1;2
+#: View/Contacts/admin_view.ctp:1 View/Contacts/complete.ctp:1;2
+#: View/Contacts/edit.ctp:1 View/Contacts/index.ctp:1;2
+#: View/Contacts/view.ctp:1;3 View/Elements/header.ctp:25
+#: View/Elements/Admin/aside.ctp:6
 msgid "Contact"
 msgstr "문의"
 
-#: View/Contacts/edit.ctp:2;3
+#: View/Contacts/admin_add.ctp:2;3
+msgid "Add Contact"
+msgstr "문의 작성"
+
+#: View/Contacts/admin_edit.ctp:2;3 View/Contacts/edit.ctp:2;3
 msgid "Edit Contact"
-msgstr ""
+msgstr "문의 수정"
+
+#: View/Contacts/admin_view.ctp:7 View/Users/admin_view.ctp:6
+msgid "Name"
+msgstr "이름"
+
+#: View/Contacts/admin_view.ctp:11 View/Users/admin_view.ctp:10
+msgid "Email"
+msgstr "이메일"
+
+#: View/Contacts/admin_view.ctp:15
+msgid "Phone"
+msgstr "전화번호"
+
+#: View/Elements/footer.ctp:4
+msgid "Address"
+msgstr "주소"
 
 #: View/Elements/header.ctp:4 View/Elements/Admin/header.ctp:3
 msgid "Welcome"
-msgstr "님 환영합니다"
+msgstr "환영합니다"
 
 #: View/Elements/header.ctp:5 View/Elements/Admin/header.ctp:4
 msgid "Logout"
 msgstr "로그아웃"
 
-#: View/Elements/header.ctp:7
+#: View/Elements/header.ctp:7 View/Users/admin_index.ctp:51
 msgid "New User"
-msgstr "회원가입"
+msgstr "회원 가입"
 
 #: View/Elements/header.ctp:8 View/Users/admin_login.ctp:7;17
 #: View/Users/login.ctp:3;15
@@ -447,46 +498,69 @@ msgstr "로그인"
 
 #: View/Elements/header.ctp:12 View/Elements/Admin/login_header.ctp:2
 msgid "Home Title"
-msgstr "SLBoard"
+msgstr "잠자는사자의 집"
 
-#: View/Elements/header.ctp:16;20 View/Intro/index.ctp:3
+#: View/Elements/header.ctp:16;20 View/Elements/Admin/aside.ctp:4
+#: View/Intro/admin_index.ctp:3;4 View/Intro/index.ctp:3;4
 msgid "Intro"
-msgstr "소개"
+msgstr "잠자는-사자"
 
-#: View/Elements/header.ctp:19 View/Pages/install.ctp:1
+#: View/Elements/header.ctp:19 View/Pages/install.ctp:1;2
 msgid "Install"
 msgstr "설치"
 
-#: View/Elements/header.ctp:27 View/Elements/Galleries/index.ctp:2
-#: View/Galleries/admin_view.ctp:2;3
-msgid "Gallery"
-msgstr "갤러리"
+#: View/Elements/header.ctp:21 View/Histories/add.ctp:2
+#: View/Histories/admin_add.ctp:2
+msgid "History"
+msgstr "약력"
 
-#: View/Elements/header.ctp:28 View/Elements/Questions/index.ctp:2
-#: View/Questions/admin_view.ctp:2;3 View/Questions/view.ctp:2;3
+#: View/Elements/header.ctp:28 View/Elements/Admin/aside.ctp:7
+#: View/Elements/Questions/index.ctp:2 View/Questions/add.ctp:1
+#: View/Questions/admin_add.ctp:1 View/Questions/admin_edit.ctp:1
+#: View/Questions/admin_index.ctp:1;2 View/Questions/admin_view.ctp:1;3
+#: View/Questions/check_password.ctp:1 View/Questions/confirm_delete.ctp:1
+#: View/Questions/edit.ctp:1 View/Questions/index.ctp:1;2
+#: View/Questions/view.ctp:1
 msgid "Question"
-msgstr "질문,답변"
+msgstr "질문, 답변"
 
-#: View/Elements/header.ctp:29
+#: View/Elements/header.ctp:29 View/Elements/Admin/aside.ctp:5
+#: View/Elements/Faqs/index.ctp:2 View/Faqs/add.ctp:1
+#: View/Faqs/admin_add.ctp:1 View/Faqs/admin_edit.ctp:1
+#: View/Faqs/admin_index.ctp:1;2 View/Faqs/admin_view.ctp:1;2;3
+#: View/Faqs/edit.ctp:1 View/Faqs/index.ctp:2;3
+#: View/Faqs/index_default.ctp:1;2 View/Faqs/view.ctp:1;2;3
 msgid "Faq"
-msgstr " FAQ"
+msgstr "FAQ"
 
 #: View/Elements/header.ctp:30 View/Elements/info.ctp:4
-#: View/Elements/Notices/index.ctp:2 View/Histories/admin_view.ctp:2;3
-#: View/Notices/admin_view.ctp:2;3 View/Notices/view.ctp:2;3
-#: View/Portfolios/admin_view.ctp:2;3
+#: View/Elements/Admin/aside.ctp:10 View/Elements/Notices/index.ctp:2
+#: View/Notices/add.ctp:2 View/Notices/admin_add.ctp:2
+#: View/Notices/admin_edit.ctp:2 View/Notices/admin_index.ctp:1;2
+#: View/Notices/admin_view.ctp:1 View/Notices/edit.ctp:2
+#: View/Notices/index.ctp:1;2 View/Notices/view.ctp:1
+#: View/Resources/admin_add.ctp:2 View/Resources/admin_edit.ctp:2
+#: View/Resources/admin_index.ctp:1;2 View/Resources/admin_view.ctp:1;2;3
 msgid "Notice"
-msgstr " 공지사항"
+msgstr "공지사항"
 
-#: View/Elements/header.ctp:31 View/Elements/GuestBooks/index.ctp:2
-#: View/Faqs/admin_view.ctp:2;3 View/Faqs/view.ctp:2;3
-#: View/GuestBooks/admin_view.ctp:2;3 View/GuestBooks/view.ctp:2;3
+#: View/Elements/header.ctp:31 View/Elements/Admin/aside.ctp:11
+#: View/Elements/GuestBooks/index.ctp:2 View/GuestBooks/add.ctp:1
+#: View/GuestBooks/admin_add.ctp:1 View/GuestBooks/admin_edit.ctp:1
+#: View/GuestBooks/admin_index.ctp:1;2 View/GuestBooks/admin_view.ctp:1
+#: View/GuestBooks/check_password.ctp:1 View/GuestBooks/confirm_delete.ctp:1
+#: View/GuestBooks/edit.ctp:1 View/GuestBooks/index.ctp:1;2
+#: View/GuestBooks/view.ctp:1
 msgid "Guest Book"
 msgstr "방명록"
 
-#: View/Elements/header.ctp:32 View/Portfolios/view.ctp:2;3
+#: View/Elements/header.ctp:32 View/Portfolios/add.ctp:1
+#: View/Portfolios/admin_add.ctp:2 View/Portfolios/admin_edit.ctp:2
+#: View/Portfolios/admin_index.ctp:1;2 View/Portfolios/admin_view.ctp:1
+#: View/Portfolios/edit.ctp:1 View/Portfolios/index.ctp:1;2
+#: View/Portfolios/view.ctp:1
 msgid "Portfolio"
-msgstr "포트폴리오"
+msgstr "제작작품"
 
 #: View/Elements/jumbotron.ctp:6
 msgid "Download"
@@ -494,19 +568,48 @@ msgstr "내려받기"
 
 #: View/Elements/search.ctp:4
 msgid "insert search word"
-msgstr "검색어를 입력해주세요"
+msgstr "검색어를 써주세요"
 
 #: View/Elements/search.ctp:5
 msgid "Search"
 msgstr "검색"
 
+#: View/Elements/Admin/aside.ctp:13 View/Users/admin_index.ctp:1;2
+#: View/Users/admin_view.ctp:1
+msgid "User"
+msgstr "회원"
+
+#: View/Elements/Admin/aside.ctp:16
+msgid "Categories"
+msgstr "분류"
+
+#: View/Elements/Admin/aside.ctp:19 View/FaqCategories/admin_add.ctp:1
+#: View/FaqCategories/admin_edit.ctp:1 View/FaqCategories/admin_index.ctp:1;2
+#: View/FaqCategories/admin_view.ctp:1;2;3
+msgid "Faq Category"
+msgstr "FAQ 분류"
+
+#: View/Elements/Admin/aside.ctp:20 View/GalleryCategories/admin_add.ctp:1
+#: View/GalleryCategories/admin_edit.ctp:1
+#: View/GalleryCategories/admin_index.ctp:1;2
+#: View/GalleryCategories/admin_view.ctp:1;2;3
+msgid "Gallery Category"
+msgstr "사진첩 분류"
+
+#: View/Elements/Admin/aside.ctp:22 View/Groups/admin_add.ctp:1
+#: View/Groups/admin_edit.ctp:1 View/Groups/admin_index.ctp:1;2
+#: View/Groups/admin_view.ctp:1;3
+msgid "Group"
+msgstr "그룹"
+
 #: View/Elements/BlogCategories/index.ctp:11
 msgid "All"
 msgstr "전체"
 
-#: View/Elements/BlogCategories/index.ctp:37 View/Elements/Blogs/index.ctp:16
-#: View/Elements/Galleries/index.ctp:18 View/Elements/GuestBooks/index.ctp:15
-#: View/Elements/Notices/index.ctp:15 View/Elements/Questions/index.ctp:15
+#: View/Elements/BlogCategories/index.ctp:37 View/Elements/Blogs/index.ctp:17
+#: View/Elements/Faqs/index.ctp:17 View/Elements/Galleries/index.ctp:21
+#: View/Elements/GuestBooks/index.ctp:17 View/Elements/Notices/index.ctp:17
+#: View/Elements/Questions/index.ctp:17
 msgid "more"
 msgstr "더보기"
 
@@ -514,190 +617,202 @@ msgstr "더보기"
 #: View/Elements/GuestBookComments/add.ctp:12
 #: View/Elements/NoticeComments/add.ctp:10
 #: View/Elements/QuestionComments/add.ctp:12
+#: View/GuestBookComments/admin_add.ctp:8
+#: View/GuestBookComments/admin_edit.ctp:7
 msgid "Save Comment"
-msgstr "제출"
+msgstr "댓글 제출"
 
-#: View/FaqCategories/admin_add.ctp:1 View/FaqCategories/admin_edit.ctp:1
-#: View/FaqCategories/admin_view.ctp:1;3
-#: View/GalleryCategories/admin_add.ctp:1
-#: View/GalleryCategories/admin_edit.ctp:1
-#: View/GalleryCategories/admin_index.ctp:1;2
-#: View/GalleryCategories/admin_view.ctp:1;3
-msgid "Gallery Categories"
-msgstr ""
+#: View/Elements/LanguageSelector/default.ctp:7
+msgid "Change Language"
+msgstr "언어 바꾸기"
 
-#: View/FaqCategories/admin_add.ctp:2;3 View/Faqs/admin_add.ctp:3
-#: View/GalleryCategories/admin_add.ctp:2;3 View/GuestBooks/admin_add.ctp:3
-msgid "Add Gallery Category"
-msgstr ""
+#: View/Elements/ThemeSelector/default.ctp:7
+msgid "Change Theme"
+msgstr "모양 바꾸기"
+
+#: View/FaqCategories/admin_add.ctp:2;3
+msgid "Add Faq Category"
+msgstr "FAQ 분류 추가"
 
 #: View/FaqCategories/admin_edit.ctp:2;3
-#: View/GalleryCategories/admin_edit.ctp:2;3
-msgid "Edit Gallery Category"
-msgstr ""
+msgid "Edit Faq Category"
+msgstr "FAQ 분류 수정"
 
-#: View/FaqCategories/admin_index.ctp:1;2
-msgid "Faq Categories"
-msgstr ""
-
-#: View/FaqCategories/admin_view.ctp:2 View/GalleryCategories/admin_view.ctp:2
-msgid "Gallery Category"
-msgstr ""
-
-#: View/Faqs/add.ctp:1 View/Faqs/admin_index.ctp:1;2 View/Faqs/edit.ctp:1
-#: View/Faqs/index.ctp:2;3 View/Faqs/index_default.ctp:1;2
-msgid "Faqs"
-msgstr ""
-
-#: View/Faqs/add.ctp:2;3 View/Faqs/edit.ctp:2;3
+#: View/Faqs/add.ctp:2;3 View/Faqs/admin_add.ctp:2;3
 msgid "Add Faq"
-msgstr ""
+msgstr "FAQ 작성"
 
-#: View/Faqs/admin_add.ctp:1 View/Faqs/admin_edit.ctp:1
-#: View/Faqs/admin_view.ctp:1 View/Faqs/view.ctp:1 View/GuestBooks/add.ctp:1
-#: View/GuestBooks/admin_add.ctp:1 View/GuestBooks/admin_edit.ctp:1
-#: View/GuestBooks/admin_index.ctp:1;2 View/GuestBooks/admin_view.ctp:1
-#: View/GuestBooks/edit.ctp:1 View/GuestBooks/index.ctp:1;2
-#: View/GuestBooks/view.ctp:1
-msgid "Guest Books"
-msgstr ""
-
-#: View/Faqs/admin_add.ctp:2 View/GuestBooks/add.ctp:3
-#: View/GuestBooks/admin_add.ctp:2
-msgid "Add Guest Book"
-msgstr ""
-
-#: View/Faqs/admin_edit.ctp:2;3 View/GuestBooks/admin_edit.ctp:2;3
-#: View/GuestBooks/edit.ctp:3
-msgid "Edit Guest Book"
-msgstr ""
-
-#: View/Faqs/admin_index.ctp:37 View/Faqs/index_default.ctp:45
-msgid "New Faq"
-msgstr ""
+#: View/Faqs/admin_edit.ctp:2;3 View/Faqs/edit.ctp:2;3
+msgid "Edit Faq"
+msgstr "FAQ 수정"
 
 #: View/Galleries/add.ctp:2;3 View/Galleries/admin_add.ctp:2;3
 msgid "Add Gallery"
-msgstr ""
+msgstr "사진첩 작성"
 
 #: View/Galleries/admin_edit.ctp:2;3 View/Galleries/edit.ctp:2;3
 msgid "Edit Gallery"
-msgstr ""
+msgstr "사진첩 수정"
 
-#: View/GuestBooks/add.ctp:2
-msgid "Add Guest Books"
-msgstr ""
+#: View/GalleryCategories/admin_add.ctp:2;3
+msgid "Add Gallery Category"
+msgstr "사진첩 분류 작성"
 
-#: View/GuestBooks/admin_index.ctp:16
-msgid "Manage"
-msgstr ""
+#: View/GalleryCategories/admin_edit.ctp:2;3
+msgid "Edit Gallery Category"
+msgstr "사진첩 분류 수정"
 
-#: View/GuestBooks/edit.ctp:2
-msgid "Edit Guest Books"
-msgstr ""
+#: View/Groups/admin_add.ctp:2;3
+msgid "Add Group"
+msgstr "그룹 작성"
 
-#: View/Histories/add.ctp:2 View/Histories/edit.ctp:2
-#: View/Histories/index.ctp:1;2 View/Histories/view.ctp:1
-msgid "Histories"
-msgstr ""
+#: View/Groups/admin_edit.ctp:2;3
+msgid "Edit Group"
+msgstr "그룹 수정"
 
-#: View/Histories/add.ctp:3;4
+#: View/GuestBookComments/admin_add.ctp:1
+#: View/GuestBookComments/admin_edit.ctp:1
+#: View/GuestBookComments/admin_index.ctp:1;2
+#: View/GuestBookComments/admin_view.ctp:1;2;3
+msgid "Guest Book Comment"
+msgstr "방명록 댓글"
+
+#: View/GuestBookComments/admin_add.ctp:2;3
+msgid "Add Guest Book Comment"
+msgstr "방명록 댓글 작성"
+
+#: View/GuestBookComments/admin_edit.ctp:2;3
+msgid "Edit Guest Book Comment"
+msgstr "방명록 댓글 수정"
+
+#: View/GuestBookComments/admin_index.ctp:34
+msgid "New Comment"
+msgstr "댓글 쓰기"
+
+#: View/GuestBooks/add.ctp:2;3 View/GuestBooks/admin_add.ctp:2;3
+msgid "Add Guest Book"
+msgstr "방명록 추가"
+
+#: View/GuestBooks/admin_edit.ctp:2;3 View/GuestBooks/edit.ctp:2;3
+msgid "Edit Guest Book"
+msgstr "방명록 수정"
+
+#: View/GuestBooks/check_password.ctp:2;3
+#: View/Questions/check_password.ctp:2;3
+msgid "Check Password"
+msgstr "비밀번호 확인"
+
+#: View/GuestBooks/confirm_delete.ctp:2;3
+#: View/Questions/confirm_delete.ctp:2;3
+msgid "Confirm Delete"
+msgstr "삭제 확인"
+
+#: View/GuestBooks/confirm_delete.ctp:6 View/Questions/confirm_delete.ctp:6
+msgid "Delete Article"
+msgstr "게시물 삭제"
+
+#: View/GuestBooks/confirm_delete.ctp:7 View/Questions/confirm_delete.ctp:7
+msgid "Cancel"
+msgstr "취소"
+
+#: View/Histories/add.ctp:3;4 View/Histories/admin_add.ctp:3;4
 msgid "Add History"
-msgstr ""
+msgstr "약력 작성"
 
-#: View/Histories/admin_add.ctp:2 View/Histories/admin_edit.ctp:2
-#: View/Histories/admin_index.ctp:1 View/Histories/admin_view.ctp:1
-#: View/Notices/add.ctp:2 View/Notices/admin_add.ctp:2
-#: View/Notices/admin_edit.ctp:2 View/Notices/admin_index.ctp:1
-#: View/Notices/admin_view.ctp:1 View/Notices/edit.ctp:2
-#: View/Notices/index.ctp:1 View/Notices/view.ctp:1
-#: View/Portfolios/admin_add.ctp:2 View/Portfolios/admin_edit.ctp:2
-#: View/Portfolios/admin_index.ctp:1 View/Portfolios/admin_view.ctp:1
-msgid "Notices"
-msgstr ""
-
-#: View/Histories/admin_add.ctp:3;4 View/Notices/add.ctp:3;4
-#: View/Notices/admin_add.ctp:3;4 View/Portfolios/admin_add.ctp:3;4
-msgid "Add Notice"
-msgstr ""
-
-#: View/Histories/admin_edit.ctp:3;4 View/Notices/admin_edit.ctp:3;4
-#: View/Notices/edit.ctp:3;4 View/Portfolios/admin_edit.ctp:3;4
-msgid "Edit Notice"
-msgstr ""
-
-#: View/Histories/admin_index.ctp:2 View/Notices/admin_index.ctp:2
-#: View/Notices/index.ctp:2 View/Portfolios/admin_index.ctp:2
-msgid "Noitces"
-msgstr ""
-
-#: View/Histories/edit.ctp:3;4
+#: View/Histories/admin_edit.ctp:3;4 View/Histories/edit.ctp:3;4
 msgid "Edit History"
-msgstr ""
-
-#: View/Histories/view.ctp:2;3
-msgid "History"
-msgstr "약력"
+msgstr "약력 수정"
 
 #: View/Layouts/admin.ctp:22 View/Layouts/admin_login.ctp:4
-#: View/Layouts/sl.ctp:4
+#: View/Layouts/sl.ctp:4 View/Themed/BlacknWhite/Layouts/_sl.ctp:4
+#: View/Themed/Simple/Layouts/_sl.ctp:4
 msgid "Homepage Title"
-msgstr "SLBoard에 오신것을 환영합니다"
+msgstr "SLBoard 소개, 사용체험 페이지에 오신것을 환영합니다. "
 
 #: View/Layouts/admin.ctp:41 View/Layouts/sl.ctp:27
+#: View/Themed/BlacknWhite/Layouts/_sl.ctp:26
+#: View/Themed/Simple/Layouts/_sl.ctp:27
 msgid "Home"
 msgstr "홈"
 
 #: View/NoticeComments/admin_add.ctp:1 View/NoticeComments/admin_edit.ctp:1
 #: View/NoticeComments/admin_index.ctp:1;2
-#: View/NoticeComments/admin_view.ctp:1
-msgid "Notice Comments"
-msgstr ""
+#: View/NoticeComments/admin_view.ctp:1;2;3
+msgid "Notice Comment"
+msgstr "공지사항 댓글"
 
 #: View/NoticeComments/admin_add.ctp:2;3
 msgid "Add Notice Comment"
-msgstr ""
+msgstr "공지사항 댓글 작성"
 
 #: View/NoticeComments/admin_edit.ctp:2;3
 msgid "Edit Notice Comment"
-msgstr ""
+msgstr "공지사항 댓글 수정"
 
-#: View/NoticeComments/admin_view.ctp:2;3
-msgid "Notice Comment"
-msgstr ""
+#: View/Notices/add.ctp:3;4 View/Notices/admin_add.ctp:3;4
+#: View/Resources/admin_add.ctp:3;4
+msgid "Add Notice"
+msgstr "공지사항 작성"
 
-#: View/Portfolios/add.ctp:1 View/Portfolios/edit.ctp:1
-#: View/Portfolios/index.ctp:1;2 View/Portfolios/view.ctp:1
-msgid "Portfolios"
-msgstr ""
+#: View/Notices/admin_edit.ctp:3;4 View/Notices/edit.ctp:3;4
+#: View/Resources/admin_edit.ctp:3;4
+msgid "Edit Notice"
+msgstr "공지사항 수정"
 
-#: View/Portfolios/add.ctp:2;3
+#: View/Pages/popup.ctp:12
+msgid "Confirm"
+msgstr "확인"
+
+#: View/Portfolios/add.ctp:2;3 View/Portfolios/admin_add.ctp:3;4
 msgid "Add Portfolio"
-msgstr ""
+msgstr "포트폴리오 작성"
 
-#: View/Portfolios/edit.ctp:2;3
+#: View/Portfolios/admin_edit.ctp:3;4 View/Portfolios/edit.ctp:2;3
 msgid "Edit Portfolio"
-msgstr ""
+msgstr "포트폴리오 수정"
 
-#: View/Questions/admin_index.ctp:13
-msgid "Id"
-msgstr "번호"
+#: View/QuestionComments/admin_add.ctp:1
+#: View/QuestionComments/admin_edit.ctp:1
+#: View/QuestionComments/admin_index.ctp:1;2
+#: View/QuestionComments/admin_view.ctp:1;2;3
+msgid "Question Comment"
+msgstr "질문,답변 댓글"
 
-#: View/Questions/admin_index.ctp:16
-msgid "Count"
-msgstr "조회"
+#: View/QuestionComments/admin_add.ctp:2;3
+msgid "Add Question Comment"
+msgstr "질문,답변 댓글 작성"
 
-#: View/Users/add.ctp:3
+#: View/QuestionComments/admin_edit.ctp:2;3
+msgid "Edit Question Comment"
+msgstr "질문,답변 댓글 수정"
+
+#: View/Questions/add.ctp:2;3 View/Questions/admin_add.ctp:2;3
+msgid "Add Question"
+msgstr "질문,답변 작성"
+
+#: View/Questions/admin_edit.ctp:2;3 View/Questions/edit.ctp:2;3
+msgid "Edit Question"
+msgstr "질문,답변 수정"
+
+#: View/Users/add.ctp:3 View/Users/admin_add.ctp:3
 msgid "Add User"
-msgstr ""
+msgstr "회원 가입"
 
-#: View/Users/edit.ctp:3
+#: View/Users/admin_edit.ctp:3 View/Users/edit.ctp:3
 msgid "Edit User"
-msgstr ""
+msgstr "회원 정보 수정"
+
+#: View/Users/admin_view.ctp:14
+msgid "Description"
+msgstr "소개글"
 
 #: View/Users/login.ctp:8
 msgid "Please enter your email and password"
-msgstr ""
+msgstr "이메일, 비밀번호를 써주세요"
+
+#: View/Users/login.ctp:12
+msgid "Password"
+msgstr "비밀번호"
 
 #: Model/Blog.php:validation for field user_id;validation blog_category_id
 #: Model/BlogCategory.php:validation blog_type_id
@@ -709,10 +824,11 @@ msgstr ""
 #: Model/History.php:validation Model/Impression.php:validation
 #: impressionable_id Model/Notice.php:validation
 #: Model/Portfolio.php:validation Model/QuestionComment.php:validation
-#: question_id Model/Setting.php:validation theme_id
-#: Model/Tagging.php:validation tag_id;validation taggable_id
+#: question_id Model/SettingController.php:validation
+#: Model/SettingGlobal.php:validation theme_id Model/Tagging.php:validation
+#: tag_id;validation taggable_id
 msgid "numeric"
-msgstr ""
+msgstr "숫자만 입력"
 
 #: Model/Blog.php:validation for field user_id;validation
 #: blog_category_id;validation title;validation description
@@ -731,12 +847,13 @@ msgstr ""
 #: Model/NoticeContent.php:validation Model/Portfolio.php:validation
 #: Model/PortfolioContent.php:validation Model/Question.php:validation
 #: Model/QuestionComment.php:validation question_id;validation
-#: Model/QuestionContent.php:validation Model/Setting.php:validation theme_id
+#: Model/QuestionContent.php:validation Model/SettingController.php:validation
+#: Model/SettingGlobal.php:validation theme_id
 #: Model/SlContentModel.php:validation Model/Tag.php:validation name
 #: Model/Tagging.php:validation tag_id;validation taggable_id
 #: Model/User.php:validation password;validation role
 msgid "notEmpty"
-msgstr ""
+msgstr "빈것없이 입력"
 
 #: Model/Blog.php:validation for field title Model/BlogCategory.php:validation
 #: Model/Contact.php:validation name;validation email;validation
@@ -746,18 +863,18 @@ msgstr ""
 #: Model/Intro.php:validation Model/Question.php:validation
 #: Model/User.php:validation
 msgid "maxLength"
-msgstr ""
+msgstr "최대길이 초과"
 
 #: Model/Blog.php:validation for field enable
-#: Model/BlogCategory.php:validation Model/BlogContent.php:validation html
-#: Model/Contact.php:validation Model/FaqCategory.php:validation
-#: Model/FaqContent.php:validation Model/GalleryCategory.php:validation
+#: Model/BlogCategory.php:validation Model/Contact.php:validation
+#: Model/FaqCategory.php:validation Model/GalleryCategory.php:validation
 #: Model/GuestBook.php:validation Model/History.php:validation
 #: Model/Notice.php:validation Model/Portfolio.php:validation
-#: Model/Question.php:validation Model/Setting.php:validation use_header
+#: Model/Question.php:validation Model/SettingController.php:validation
+#: Model/SettingGlobal.php:validation use_header
 msgid "boolean"
-msgstr ""
+msgstr "참, 거짓만 입력"
 
 #: Model/User.php:validation for field email
 msgid "email must be unique"
-msgstr ""
+msgstr "이메일은 유일해야 합니다."

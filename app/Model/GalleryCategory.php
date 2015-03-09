@@ -1,12 +1,14 @@
 <?php
-App::uses('AppModel', 'Model');
+App::uses('SlModel', 'Model');
 /**
  * GalleryCategory Model
  *
  * @property Gallery $Gallery
  */
-class GalleryCategory extends AppModel {
-
+class GalleryCategory extends SlModel {
+	public $actsAs = array(
+  	'Translate' => array('title')
+	);
 /**
  * Display field
  *
@@ -23,6 +25,7 @@ class GalleryCategory extends AppModel {
 		'title' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
+				'unique' => array('rule' => 'isUnique', 'message' => 'title must be unique')
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -30,7 +33,7 @@ class GalleryCategory extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'maxLength' => array(
-				'rule' => array('maxLength'),
+				'rule' => array('maxLength',60),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

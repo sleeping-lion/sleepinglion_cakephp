@@ -42,6 +42,21 @@ class AppHelper extends Helper {
 		return $tags;
 	}
 	
+	
+	public function checkAnonAuth(Array $content,$modelName,$session) {
+		
+		if($session->check('Auth.User')) {
+			if($content['user_id']==SessionHelper::read('Auth.User.id')) {
+				return true;
+			}
+		} else {
+			if($session->check("AnonAuth.{$modelName}.{$content['id']}")) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public function getFormatCommentCount($comment_count=0) {
 		$return_string='';
 		

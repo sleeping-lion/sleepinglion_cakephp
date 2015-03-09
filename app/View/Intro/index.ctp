@@ -1,12 +1,13 @@
-<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.tools.min.js','plugin/jquery.fancybox.pack.js','plugin/jquery.uri.js','intro/index.js'), array('inline' => false)); ?>
-<?php $this -> Html -> css(array('plugin/jquery.fancybox.css'),array('inline' => false)); ?>
-<?php $this->Html->addCrumb(__('Intro'), array('controller' => 'intro', 'action' => 'index')); ?>
+<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.tools.min.js','plugin/jquery.fancybox.pack.js','plugin/jquery.uri.js','intro/index.js'), array('inline' => false)) ?>
+<?php $this -> Html -> css(array('plugin/jquery.fancybox.css'),array('inline' => false)) ?>
+<?php $this->Html->addCrumb(__('Intro'), array('controller' => 'intro', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Intro')) ?>
 <section id="sl_intro_index">
 	<?php if(isset($user['User'])): ?>
   <article id="intro_main_content" itemscope itemtype="http://schema.org/Person">
     <?php if($userPhoto['UserPhoto']['photo']): ?>	
     <div id="sl_intro_left">
-		<?php echo $this -> Html -> link($this->Html->image('/files/user_photo/photo/'.$userPhoto['UserPhoto']['id'].'/small_'.$userPhoto['UserPhoto']['photo'], array('alt' =>$user['User']['name'])),'/files/user_photo/photo/'.$userPhoto['UserPhoto']['id'].'/small_'.$userPhoto['UserPhoto']['photo'],array('escape'=>false,'class'=>'simple_image')) ?>
+		<?php echo $this -> Html -> link($this->Html->image('/files/user_photo/photo/'.$userPhoto['UserPhoto']['id'].'/small_'.$userPhoto['UserPhoto']['photo'], array('alt' =>$user['User']['name'])),'/files/user_photo/photo/'.$userPhoto['UserPhoto']['id'].'/'.$userPhoto['UserPhoto']['photo'],array('escape'=>false,'class'=>'simple_image')) ?>
     </div>
     <?php endif ?>
     <div id="sl_intro_right">

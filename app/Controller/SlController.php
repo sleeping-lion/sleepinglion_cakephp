@@ -42,7 +42,11 @@ class SlController extends AppController {
 		if ($hasCategory) {
 			$search_model_condition = array($modleCategoryAlias . '.enable' => true, $modelAilas . '.enable' => true);
 		} else {
-			$search_model_condition = array($modelAilas . '.enable' => true);
+			if($this->params['admin']) {
+				$search_model_condition = array();
+			} else {
+				$search_model_condition = array($modelAilas . '.enable' => true);
+			}
 		}
 
 		if (isset($this -> request -> query['search_type']) AND isset($this -> request -> query['search_text'])) {
@@ -74,6 +78,9 @@ class SlController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
+		
+		$this -> loadModel('SettingController');
+		$this -> set('settingController', $this -> SettingController -> find('all', array('conditions' => array('enable' => true), 'recursive' => -1)));
 
 		$this -> loadModel('BlogCategory');
 		$this -> set('asideBlogCategories', $this -> BlogCategory -> find('all', array('conditions' => array('enable' => true), 'recursive' => -1)));
@@ -82,6 +89,18 @@ class SlController extends AppController {
 		$this -> set('asideTags', $this -> Tag -> find('all',array('conditions'=>array('not'=>array('taggings_count'=>0)),'order'=>array('taggings_count desc'), 'recursive' => -1)));
 
 		$this -> Auth -> allow('index', 'view');
+		
+		if($this->Session->check('theme')) {
+			$this->theme=$this->Session->read('theme');
+		} else {
+			$this->theme=null;
+		}
+		
+   if ($this->Session->check('Config.language')) {
+   		Configure::write('Config.language', $this->Session->read('Config.language'));
+		 } else {
+   		Configure::write('Config.language','kor');
+		 }
 	}
 
 
@@ -127,5 +146,27 @@ class SlController extends AppController {
 		$this -> delete($id);
 		$this -> layout = 'admin';
 	}
-
+	
+	public function admin_change_status($id) {
+		$this -> change_status($id);
+		$this -> layout = 'admin';
+	}	
+	
+	public function change_status($id) {
+		$this -> request -> allowMethod('post');
+		
+		if (!$this -> {$this -> modelClass} -> exists($id)) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+		
+		$mm=$this -> {$this -> modelClass}->findById($id);
+		
+		$this->{$this -> modelClass}->id    = $id;		
+		if($mm[$this -> modelClass]['enable']) {
+			$this->{$this -> modelClass}->saveField('enable', false);
+		} else {
+			$this->{$this -> modelClass}->saveField('enable',true);
+		}
+		return $this -> redirect(array('action' => 'index',$id));
+	}
 }

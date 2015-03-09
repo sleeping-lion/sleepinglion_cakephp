@@ -1,6 +1,6 @@
-<?php $this -> Html -> addCrumb(__('Questions'), array('controller' => 'questions', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Edit Question'), array('controller' => 'questions', 'action' => 'edit', $this -> request -> data['Question']['id'])); ?>
-<?php $this -> assign('title', __('Edit Question')); ?>
+<?php $this -> Html -> addCrumb(__('Question'), array('controller' => 'questions', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb(__('Edit Question'), array('controller' => 'questions', 'action' => 'edit', $this -> request -> data['Question']['id'])) ?>
+<?php $this -> assign('title', __('Edit Question')) ?>
 <?php
 echo $this -> Form -> create('Question');
 echo $this -> Form -> input('title', array('div' => array('class' => 'form-group'), 'class' => 'form-control'));

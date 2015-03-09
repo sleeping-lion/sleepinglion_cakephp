@@ -9,7 +9,7 @@
 나만이라도 깨끗한 최고의 웹페이지를 제작합니다.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo _('confirm') ?></button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo __('Confirm') ?></button>
       </div>
     </div>
   </div>

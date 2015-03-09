@@ -1,6 +1,6 @@
-<?php $this -> Html -> addCrumb(__('Portfolios'), array('controller' => 'portfolios', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Portfolio'), array('controller' => 'portfolios', 'action' => 'view', $portfolio['Portfolio']['id'])); ?>
-<?php $this -> assign('title', __('Portfolio')); ?>
+<?php $this -> Html -> addCrumb(__('Portfolio'), array('controller' => 'portfolios', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb($portfolio['Portfolio']['title'], array('controller' => 'portfolios', 'action' => 'view', $this -> params['id'])) ?>
+<?php $this -> assign('title',$portfolio['Portfolio']['title']) ?>
 <section id="sl_portfolio_show">
   <div class="slboard_content">
     <div class="sl_content_header">

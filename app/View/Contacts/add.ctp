@@ -1,6 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Contacts'), array('controller' => 'contacts', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Add Contact'), array('controller' => 'contacts', 'action' => 'add')); ?>
-<?php $this -> assign('title', __('Add Contact')); ?>
+<?php $this -> Html -> addCrumb(__('Contact'), array('controller' => 'contacts', 'action' => 'add')) ?>
+<?php $this -> assign('title', __('Contact')) ?>
 <?php
 echo $this -> Form -> create('Contact');
 echo $this -> Form -> input('name', array('div' => array('class' => 'form-group'), 'class' => 'form-control'));

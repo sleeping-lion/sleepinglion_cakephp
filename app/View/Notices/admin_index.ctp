@@ -1,8 +1,9 @@
-<?php $this -> Html -> addCrumb(__('Notices'), array('controller' => 'notices', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Noitces')); ?>
+<?php $this -> Html -> addCrumb(__('Notice'), array('controller' => 'notices', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Notice')); ?>
 <section id="sl_notice_index" class="table-responsive">
 	<table width="100%" cellpadding="0" cellspacing="0" class="table table-striped">
 		<colgroup>
+			<col />
 			<col />
 			<col />
 			<col />
@@ -12,7 +13,8 @@
 				<th class="sl_t_id"><?php echo $this -> App -> getOrderLink($this -> Paginator,'id') ?></th>
        <th class="sl_t_title"><?php echo $this -> App -> getOrderLink($this -> Paginator,'title') ?></th>
        <th class="sl_t_created_at"><?php echo $this -> App -> getOrderLink($this -> Paginator,'created_at') ?></th>
-			</tr>
+       <th class="sl_t_manage"><?php echo __('Manage') ?></th>
+      </tr>
 		</thead>
 		<tbody>
 			<?php if(count($notices)): ?>
@@ -21,12 +23,23 @@
         		<td class="sl_t_id"><?php echo $notice['Notice']['id']; ?></td>
         		<td class="sl_t_title"><?php echo $this -> Html -> link($notice['Notice']['title'], array('controller' => 'notices', 'action' => 'view', $notice['Notice']['id'])); ?></td>
         		<td class="sl_t_created_at"><?=$this -> App -> getFormatDate($notice['Notice']['created_at'], 3); ?></td>
+        		<td class="sl_t_manage">
+					<?php echo $this -> Html -> link('<span class="glyphicon glyphicon-pencil"></span>'
+					,array('action'=>'edit',$notice['Notice']['id']),array('class'=>'btn sl_edit_link','escape'=>false)) ?>
+				<?php echo $this -> Form-> postLink('<span class="glyphicon glyphicon-trash"></span>',array('action' => 'delete',$notice['Notice']['id']),array('class'=>'btn sl_delete_form_link','escape'=>false,'confirm' => __('Are you sure you wish to delete this article?'))) ?>
+				<?php if($notice['Notice']['enable']): ?>
+				<?php echo $this -> Form-> postLink('<span class="glyphicon glyphicon-ok-circle"></span>',array('action' => 'change_status',$notice['Notice']['id']),array('class'=>'btn sl_delete_form_link','escape'=>false)) ?>
+				<?php else: ?>
+				<?php echo $this -> Form-> postLink('<span class="glyphicon glyphicon-ban-circle"></span>',array('action' => 'change_status',$notice['Notice']['id']),array('class'=>'btn sl_delete_form_link','escape'=>false)) ?>
+				<?php endif ?>											
+        		</td>        		
     		</tr>
     		<?php endforeach; ?>
-    		<?php unset($notices); ?>
+    		<?php unset($notices) ?>
+    		<?php unset($notice) ?>    		
     		<?php else: ?>
     		<tr>
-    			<td colspan="3"><?php echo __('No Article') ?></td>
+    			<td colspan="4"><?php echo __('No Article') ?></td>
     		</tr>
     		<?php endif ?> 
 		</tbody>

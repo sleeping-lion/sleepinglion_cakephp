@@ -1,5 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Faqs'), array('controller' => 'faqs', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Faqs')); ?>
+<?php $this -> Html -> addCrumb(__('Faq'), array('controller' => 'faqs', 'action' => 'index')); ?>
+<?php $this -> assign('title', __('Faq')); ?>
 <section id="sl_notice_index">
 	<article class="table-responsive">
 	<table width="100%" cellpadding="0" cellspacing="0" class="table table-striped">
@@ -42,7 +42,7 @@
 	</article>
 	<div id="sl_index_bottom_menu">
 		<?php echo $this -> App -> pagination($this -> Paginator) ?>
-		<?php echo $this -> Html -> link(__('New Faq'), array('action' => 'add'),array('class'=>"btn btn-default btn btn-default col-xs-12 col-md-2")) ?>
+		<?php echo $this -> Html -> link(__('New Article'), array('action' => 'add'),array('class'=>"btn btn-default btn btn-default col-xs-12 col-md-2")) ?>
 		<?php echo $this-> element ('search') ?>		
 	</div>
 </section>

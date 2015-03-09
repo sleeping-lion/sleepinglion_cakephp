@@ -124,7 +124,7 @@ class FaqsController extends SlController {
 		}
 
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> request -> data['Faq']['id'] = $id;
+			$this -> Faq -> id = $id;
 			//			$this -> request -> data['Faq']['user_id'] = $this -> Auth -> user('id');
 			if ($this -> Faq -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
@@ -160,5 +160,16 @@ class FaqsController extends SlController {
 			$this -> Session -> setFlash(__('The post could not be deleted. Please, try again.'), 'error');
 		}
 		return $this -> redirect(array('action' => 'index'));
+	}
+
+/**
+ * admin_index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$this->layout='admin';		
+		$this->Faq->recursive = 0;
+		$this->set('faqs', $this->Paginator->paginate());
 	}
 }

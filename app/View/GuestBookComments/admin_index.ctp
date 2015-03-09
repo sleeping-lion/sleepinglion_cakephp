@@ -1,5 +1,5 @@
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Blogs')); ?>
+<?php $this->Html->addCrumb(__('Guest Book Comment'), array('controller' => 'guest_book_comments', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Guest Book Comment')) ?>
 <section id="sl_blog_index" class="table-responsive">
   <table width="100%" cellpadding="0" cellspacing="0" class="table slboard_list">
     <colgroup>
@@ -31,7 +31,7 @@
 		</tbody>
 	</table>
 	<div id="sl_bottom_menu">
-		<?php echo $this -> Html -> link(__('New Article'), array('action' => 'add')); ?>
+		<?php echo $this -> Html -> link(__('New Comment'), array('action' => 'add')); ?>
 		<?php echo $this -> App-> pagination($this -> Paginator); ?>
 	</div>
 </section>

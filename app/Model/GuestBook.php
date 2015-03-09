@@ -8,6 +8,9 @@ App::uses('SlAnonModel', 'Model');
  */
 class GuestBook extends SlAnonModel {
 	public $actsAs = array(	
+  	'Translate' => array(
+            'title'
+        ),	
     'Sitemap.Sitemap' => array(
         'primaryKey' => 'id', //Default primary key field
         'loc' => 'buildUrl', //Default function called that builds a url, passes parameters (Model $Model, $primaryKey)

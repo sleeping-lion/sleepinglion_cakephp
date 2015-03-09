@@ -3,6 +3,9 @@
 		<?php if($this->Session->check('Auth.User')): ?>
 		<li><?php echo $this -> Html -> link($this->Session->Read('Auth.User.name'),array('controller'=>'users','action'=>'edit',$this->Session->Read('Auth.User.id'))) ?><?php echo __('Welcome') ?></li>
 		<li><?php echo $this -> Html -> link(__('Logout'),array('controller'=>'users','action'=>'logout')) ?></li>
+		<?php else: ?>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users','action'=>'add')) ?></li>
+		<li><?php echo $this->Html->link(__('Login'), array('controller' => 'users','action'=>'login')) ?></li>
 		<?php endif ?>
 	</ul>
 	<nav class="container">

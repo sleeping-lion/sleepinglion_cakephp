@@ -1,5 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Contacts'), array('controller' => 'contacts', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Contacts')); ?>
+<?php $this -> Html -> addCrumb(__('Contact'), array('controller' => 'contacts', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Contact')) ?>
 <section id="sl_question_index" class="table-responsive">
   <table width="100%" cellpadding="0" cellspacing="0" class="table slboard_list">
     <colgroup>
@@ -17,18 +17,19 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php if(count($questions)): ?>
-    	<?php foreach ($questions as $question): ?>
+			<?php if(count($contacts)): ?>
+    	<?php foreach ($contacts as $contact): ?>
     		<tr>
-        		<td><?php echo $question['Question']['id']; ?></td>
+        		<td><?php echo $contact['Contact']['id']; ?></td>
         		<td>
-        			<?php echo $this -> Html -> link($question['Question']['title'], array('controller' => 'questions', 'action' => 'view', $question['Question']['id'])); ?>
+        			<?php echo $this -> Html -> link($contact['Contact']['title'], array('controller' => 'questions', 'action' => 'view', $contact['Contact']['id'])); ?>
         		</td>
-        		<td><?php echo $question['Question']['count'] ?></td>
-        		<td><p class="sl_registered_date"><?php echo $this -> App -> getFormatDate($question['Question']['created_at'], 3); ?></p></td>
+        		<td><?php echo $contact['Contact']['count'] ?></td>
+        		<td><p class="sl_registered_date"><?php echo $this -> App -> getFormatDate($contact['Contact']['created_at'], 3); ?></p></td>
     		</tr>
     		<?php endforeach; ?>
-    		<?php unset($questions); ?>
+    		<?php unset($contacts) ?>
+    		<?php unset($contact) ?>    		
     		<?php else: ?>
     		<tr>
     			<td colspan="4"><?php echo __('No Article') ?></td>
@@ -41,5 +42,4 @@
 		<?php echo $this -> App -> pagination($this -> Paginator); ?>
 	</div>
 </section>
-
 

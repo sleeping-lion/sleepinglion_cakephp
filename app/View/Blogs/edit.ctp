@@ -1,7 +1,7 @@
-<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false); ?>
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(__('Edit Blog'), array('controller' => 'blogs', 'action' => 'edit')); ?>
-<?php $this -> assign('title', __('Edit Blog')); ?>
+<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false) ?>
+<?php $this->Html->addCrumb(__('Blog'), array('controller' => 'blogs', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(__('Edit Blog'), array('controller' => 'blogs', 'action' => 'edit')) ?>
+<?php $this -> assign('title', __('Edit Blog')) ?>
 <?php
 echo $this->Form->create('Blog',array('type'=>'file')); 
 echo $this->Form->input('blog_category_id',array('type'=>'select','div'=>array('class'=>'form-group'),'class'=>'form-control'));

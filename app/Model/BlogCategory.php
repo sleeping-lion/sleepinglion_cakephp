@@ -1,5 +1,5 @@
 <?php
-App::uses('AppModel', 'Model');
+App::uses('SlModel', 'Model');
 /**
  * BlogCategory Model
  *
@@ -7,8 +7,10 @@ App::uses('AppModel', 'Model');
  * @property BlogCategoryRel $BlogCategoryRel
  * @property Blog $Blog
  */
-class BlogCategory extends AppModel {
-
+class BlogCategory extends SlModel {
+	public $actsAs = array(
+  	'Translate' => array('title')
+	);
 /**
  * Display field
  *
@@ -25,6 +27,7 @@ class BlogCategory extends AppModel {
 		'blog_type_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
+				'unique' => array('rule' => 'isUnique', 'message' => 'title must be unique')				
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -42,7 +45,7 @@ class BlogCategory extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'maxLength' => array(
-				'rule' => array('maxLength'),
+				'rule' => array('maxLength',60),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -69,7 +72,7 @@ class BlogCategory extends AppModel {
  *
  * @var array
  */
-	//public $belongsTo = array('BlogCategory'=>array('counterCache' =>  'blog_categoires_count'));
+ public $belongsTo = array('ParentBlogCategory'=>array('table'=>'blog_categories','className' => 'BlogCategory', 'foreignKey' => 'blog_category_id','counterCache' =>  'blog_categories_count'));
 
 /**
  * hasMany associations

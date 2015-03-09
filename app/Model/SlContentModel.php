@@ -5,7 +5,11 @@ App::uses('AppModel', 'Model');
  *
  */
 class SlContentModel extends AppModel {
-
+	/* 	public $actsAs = array(
+  	'Translate' => array(
+            'content'
+        )
+	);  */
 /**
  * Display field
  *

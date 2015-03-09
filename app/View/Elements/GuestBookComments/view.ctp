@@ -1,4 +1,4 @@
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
+<?php $this->Html->addCrumb(__('Blog'), array('controller' => 'blogs', 'action' => 'index')); ?>
 <?php $this->Html->addCrumb(__('Blog'), array('controller' => 'blogs', 'action' => 'view', $this -> params['id'])); ?>
 <?php $this -> assign('title', __('Blog')); ?>
 <section id="sl_blog_show" itemscope itemprop="blogPost" itemtype="http://schema.org/Blog">	

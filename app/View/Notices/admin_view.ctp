@@ -1,10 +1,10 @@
-<?php $this -> Html -> addCrumb(__('Notices'), array('controller' => 'notices', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Notice'), array('controller' => 'notices', 'action' => 'view', $notice['Notice']['id'])); ?>
-<?php $this -> assign('title', __('Notice')); ?>
+<?php $this -> Html -> addCrumb(__('Notice'), array('controller' => 'notices', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb($notice['Notice']['title'], array('controller' => 'notices', 'action' => 'view', $this -> params['id'])) ?>
+<?php $this -> assign('title',$notice['Notice']['title']) ?>
 <section id="slboard_question_show">
   <div class="slboard_content">
     <div class="sl_content_header">
-      <h3 itemprop="name"><?php echo h($notice['Notice']['title']); ?></h3>
+      <h3 itemprop="name"><?php echo h($notice['Notice']['title']) ?></h3>
     </div>
     <div class="sl_content_main">
      		<p class="sl_content_info"><?php echo _('label_name') ?> : <span  itemprop="author"><?php echo $notice['User']['name'] ?></span>&nbsp;&nbsp;&nbsp; 

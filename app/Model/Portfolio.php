@@ -6,6 +6,7 @@ App::uses('SlModel', 'Model');
  */
 class Portfolio extends SlModel {
 	public $actsAs = array('Upload.Upload' => array('photo' => array('fields' => array('dir' => 'id'), 'thumbnailSizes' => array('xvga' => '1024x768','small'=>'400x300','thumb' => '100x100'))),
+		 'Translate' => array('title'),
     'Sitemap.Sitemap' => array(
         'primaryKey' => 'id', //Default primary key field
         'loc' => 'buildUrl', //Default function called that builds a url, passes parameters (Model $Model, $primaryKey)

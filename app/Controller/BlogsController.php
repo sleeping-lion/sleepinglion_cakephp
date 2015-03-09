@@ -11,7 +11,7 @@ class BlogsController extends SlController {
 
 	protected function _getCategoriedCategory() {
 		$this -> loadModel('BlogCategory');
-		$blogCategories = $this -> BlogCategory -> find('list', array('fields' => array('BlogCategory.id', 'BlogCategory.title', 'BlogCategory2.title'), 'joins' => array( array('table' => 'blog_categories', 'alias' => 'BlogCategory2', 'type' => 'left', 'conditions' => array('BlogCategory.blog_category_id = BlogCategory2.id', 'BlogCategory2.leaf' => false))), 'conditions' => array('BlogCategory.leaf' => true), 'order' => array('BlogCategory.blog_category_id desc,BlogCategory2.id desc'), 'recursive' => -1));
+		$blogCategories = $this -> BlogCategory -> find('list', array('fields' => array('BlogCategory.id', 'BlogCategory.title', 'BlogCategory2.title'), 'joins' => array( array('table' => 'blog_categories', 'alias' => 'BlogCategory2', 'type' => 'left', 'conditions' => array('BlogCategory.blog_category_id = BlogCategory2.id', 'BlogCategory2.leaf' => false,'BlogCategory.enable'=>true))), 'conditions' => array('BlogCategory.leaf' => true), 'order' => array('BlogCategory.blog_category_id desc,BlogCategory2.id desc'), 'recursive' => -1));
 
 		if (!count($blogCategories))
 			throw new Exception(__('Insert Blog Category First'));
@@ -21,8 +21,6 @@ class BlogsController extends SlController {
 				throw new NotFoundException(__('Invalid post'));
 
 			$blog_category_id = $this -> request -> query['blog_category_id'];
-		} else {
-			$blog_category_id = $blogSubCategories[0]['BlogCategory']['id'];
 		}
 
 		$this -> set('blogCategories', $blogCategories);
@@ -32,7 +30,7 @@ class BlogsController extends SlController {
 
 	protected function _getCategory() {
 		$this -> loadModel('BlogCategory');
-		$blogCategories = $this -> BlogCategory -> find('list', array('conditions' => array('leaf' => true), 'recursive' => -1));
+		$blogCategories = $this -> BlogCategory -> find('list', array('conditions' => array('leaf' => true,'enable'=>true), 'recursive' => -1));
 		if (!count($blogCategories))
 			throw new Exception(__('Insert Blog Category First'));
 
@@ -179,7 +177,7 @@ class BlogsController extends SlController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> request -> data['Blog']['id'] = $id;
+			$this -> Blog -> id = $id;
 			if ($this -> Blog -> saveAll($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
@@ -190,7 +188,7 @@ class BlogsController extends SlController {
 			$options = array('conditions' => array('Blog.' . $this -> Blog -> primaryKey => $id));
 			$this -> request -> data = $this -> Blog -> find('first', $options);
 
-			$this -> _getCategory();
+			$this -> _getCategoriedCategory();
 		}
 	}
 
@@ -215,4 +213,14 @@ class BlogsController extends SlController {
 		return $this -> redirect(array('action' => 'index'));
 	}
 
+	/**
+ * index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$this->layout='admin';
+		$this->Blog->recursive = 0;
+		$this->set('blogs', $this->Paginator->paginate());
+	}
 }

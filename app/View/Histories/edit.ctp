@@ -1,7 +1,7 @@
-<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false); ?>
-<?php $this -> Html -> addCrumb(__('Histories'), array('controller' => 'histories', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Edit History'), array('controller' => 'histories', 'action' => 'add')); ?>
-<?php $this -> assign('title', __('Edit History')); ?>
+<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false) ?>
+<?php $this -> Html -> addCrumb(__('History'), array('controller' => 'histories', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb(__('Edit History'), array('controller' => 'histories', 'action' => 'add')) ?>
+<?php $this -> assign('title', __('Edit History')) ?>
 <?php
 echo $this -> Form -> create('History');
 echo $this -> Form -> input('title', array('div' => array('class' => 'form-group'), 'class' => 'form-control'));

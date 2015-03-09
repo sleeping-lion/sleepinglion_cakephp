@@ -12,6 +12,9 @@
 				<?php endforeach ?>
 			</ul>
 			<?php endforeach ?>
+		<?php unset($galleries) ?>
+		<?php unset($gallery) ?>
+		<?php unset($gallery_value) ?>		
 		</div>
 	</div>
 	<a class="next browse right hidden-xs"></a>

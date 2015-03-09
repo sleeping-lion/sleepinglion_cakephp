@@ -1,5 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Questions'), array('controller' => 'questions', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Questions')); ?>
+<?php $this -> Html -> addCrumb(__('Question'), array('controller' => 'questions', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Question')) ?>
 <section id="sl_question_index">
 	<article class="table-responsive">	
   <table width="100%" cellpadding="0" cellspacing="0" class="table table-striped">

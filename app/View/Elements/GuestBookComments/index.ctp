@@ -10,13 +10,11 @@
 			<p itemprop="description"><?php echo nl2br($guestBookComment['GuestBookComment']['content']) ?></p>
 		</div>
 	</article>
-	<?php endforeach; ?>
-	<?php unset($guestBookComments); ?>
-	<?php unset($guestBookComment); ?>	
-	<?php else: ?>
-	<p><?php echo __('No Article') ?></p>				
-	<?php endif ?>
+	<?php endforeach ?>
+	<?php unset($guestBookComments) ?>
+	<?php unset($guestBookComment) ?>
 	<div id="sl_index_bottom_menu">
 		<?php echo $this -> App -> pagination($this -> Paginator); ?>
-	</div>
+	</div>				
+	<?php endif ?>
 </section>

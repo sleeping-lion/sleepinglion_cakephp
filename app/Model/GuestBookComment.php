@@ -7,7 +7,9 @@ App::uses('SlAnonModel', 'Model');
  * @property User $User
  */
 class GuestBookComment extends SlAnonModel {
-
+	public $actsAs = array(
+  	'Translate' => array('comment')
+	);
 /**
  * Display field
  *

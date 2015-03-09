@@ -31,7 +31,9 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
  
-class AppController extends Controller {	
+class AppController extends Controller {
+	#public $theme='Simple';
+	#public $theme='BlacknWhite';	
 	public $helpers = array('Html', 'Form', 'App', 'Session');
 	public $components = array('Paginator','Acl','RequestHandler', 'Auth' => array('authorize' => 'Controller','authenticate' => array('Form' => array(
 	      'passwordHasher' => 'Blowfish',
@@ -94,6 +96,9 @@ class AppController extends Controller {
 				case 'admin_edit' :
 					$allow = $this -> Acl -> check(array('model' => 'Group', 'foreign_key' => $group_id), $controller, 'update');
 					break;
+				case 'admin_change_status' :
+					$allow = $this -> Acl -> check(array('model' => 'Group', 'foreign_key' => $group_id), $controller, 'update');
+					break;
 				case 'delete' :
 					$allow = $this -> Acl -> check(array('model' => 'Group', 'foreign_key' => $group_id), $controller, 'delete');
 					break;
@@ -114,7 +119,7 @@ class AppController extends Controller {
 		return $allow;
 	}	
 	
-	public function isOwnedBy($post, $user) {
-		return $this -> field('id', array('id' => $post, 'user_id' => $user)) !== false;
-	}
+//	public function isOwnedBy($post, $user) {
+//		return $this -> field('id', array('id' => $post, 'user_id' => $user)) !== false;
+//	}
 }

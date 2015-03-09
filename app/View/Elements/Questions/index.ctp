@@ -8,6 +8,8 @@
 			<span class="sl_created_at"><?php echo $this->App->getFormatDate($question['Question']['created_at']) ?></span>					
 		</li>
 		<?php endforeach ?>
+		<?php unset($questions) ?>
+		<?php unset($question) ?>
   </ul>
   <?php else: ?>
   <p><?php echo __('No Article') ?></p>

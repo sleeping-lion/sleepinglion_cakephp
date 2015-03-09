@@ -1,0 +1,36 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SLBoard\n"
+"POT-Creation-Date: 2015-03-07 19:29+0000\n"
+"PO-Revision-Date: 2015-03-10 00:35+0900\n"
+"Last-Translator: \n"
+"Language-Team: SL <admin@sleepinglion.pe.kr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: korean\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: View/Elements/footer.ctp:4
+msgid "Address"
+msgstr "아프리카 사자굴"
+
+#: View/Elements/jumbotron.ctp:2
+msgid "Main Title"
+msgstr "웹프로그래머 잠자는-사자입니다."
+
+#: View/Elements/jumbotron.ctp:3
+msgid "Main Description"
+msgstr " 사자굴에 오신것을 환영합니다."
+
+#: View/Elements/jumbotron.ctp:4
+msgid "Now Download"
+msgstr "지금 다운 받으세요~"
+
+#: View/Elements/jumbotron.ctp:5
+msgid "SLBoard Dream"
+msgstr "깨끗한 웹을 꿈꾸고 있습니다"

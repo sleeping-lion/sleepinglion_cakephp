@@ -1,6 +1,6 @@
-<?php $this -> Html -> addCrumb(__('Histories'), array('controller' => 'histories', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('History'), array('controller' => 'histories', 'action' => 'view', $history['History']['id'])); ?>
-<?php $this -> assign('title', __('History')); ?>
+<?php $this -> Html -> addCrumb(__('History'), array('controller' => 'histories', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb($history['History']['title'], array('controller' => 'histories', 'action' => 'view',$this -> params['id'])) ?>
+<?php $this -> assign('title', $history['History']['title']) ?>
 <section id="slboard_history_show">
   <div class="slboard_content">
     <div class="sl_content_header">

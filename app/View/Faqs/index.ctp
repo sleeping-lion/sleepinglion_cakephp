@@ -1,6 +1,6 @@
-<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.tools.min.js','plugin/jquery.uri.js','faqs/index.js'), array('inline' => false)); ?>
-<?php $this -> Html -> addCrumb(__('Faqs'), array('controller' => 'faqs', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Faqs')); ?>
+<?php $this -> Html -> script(array('plugin/jquery.easing.1.3.pack.js','plugin/jquery.tools.min.js','plugin/jquery.uri.js','faqs/index.js'), array('inline' => false)) ?>
+<?php $this -> Html -> addCrumb(__('Faq'), array('controller' => 'faqs', 'action' => 'index')) ?>
+<?php $this -> assign('title', __('Faq')) ?>
 <section id="sl_faq_index">
 	<ol class="nav nav-tabs">
 		<?php if(count($faqCategories)): ?>
@@ -57,7 +57,7 @@
   	</div>
   	<?php endforeach ?>
 		<?php else: ?>
-		<dt><?php echo _('No Article') ?></dt>
+		<p><?php echo __('No Article') ?></p>
 		<?php endif ?>
 		<?php unset($value) ?>		 	
   </article>	

@@ -8,6 +8,8 @@
 			<span class="sl_created_at"><?php echo $this->App->getFormatDate($notice['Notice']['created_at']) ?></span>			
 		</li>
 		<?php endforeach ?>
+		<?php unset($notices) ?>
+		<?php unset($notice) ?>	
   </ul>
   <?php else: ?>
   <p><?php echo __('No Article') ?></p>

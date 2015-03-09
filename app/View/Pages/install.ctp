@@ -1,4 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Install'), array('controller' => 'pages', 'action' => 'install')); ?>
+<?php $this -> Html -> addCrumb(__('Install'), array('controller' => 'pages', 'action' => 'install')) ?>
+<?php $this -> assign('title', __('Install')) ?>
 <section id="sl_install_index">
 	<article>
 		<h3>SLBoard 란?</h3>
@@ -20,13 +21,17 @@
 			<li>sql(slboard.sql)파일을 이용하여 테이블을 생성합니다. l<br />명령어 mysql -u 사용자  -p 데이터베이스 &gt; slboard.sql 
 				</li>
 			<li>config파일에 접속 정보를 설정합니다. <br />
-				app/Config/database.php파일을 데이터베이스 정보를 알맞게 넣어서  생성합니다.  / <a href="http://book.cakephp.org/2.0/en/development/configuration.html" target="_blank">CakePHP Database.php 작성법</a> 
+				app/Config/database_example.php파일을 database.php로 이름을 바꾸고 데이터베이스 정보를 알맞게 넣어서  생성합니다.  / <a href="http://book.cakephp.org/2.0/en/development/configuration.html" target="_blank">CakePHP Database.php 작성법</a> 
 				</li>
 			<li>app/tmp, app/webroot/files 폴더를 생성하고 웹사용자가 쓸 수 있는 권한을 부여합니다.</li>
 			<li>
-				 config/Core.php의 보안키의 값을 다른 랜덤 값으로 바꿔 주세요<br />
+				 app/Config/core.php의 보안키의 값을 다른 랜덤 값으로 바꿔 주세요<br />
 					Configure::write('Security.salt',값);<br />
 					Configure::write('Security.cipherSeed',값);				
+			</li>
+			<li>app/Config/boostrap.php의 키값을 자신의 구글 Recaptcha키 값으로 바꿔주세요<br />
+					Configure::write('Recaptcha.publicKey',값);<br />
+					Configure::write('Recaptcha.privateKey',값);					
 			</li>
 			<li>개발시에는 config/Core.php의 Configure::write('debug',값)의 값을 1이나 2로 하고 운영시에는 0으로 설정합니다.</li>			
 		</ol>

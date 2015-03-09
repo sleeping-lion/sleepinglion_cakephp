@@ -1,6 +1,6 @@
-<?php $this->Html->addCrumb(__('Galleries'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(__('Gallery'), array('controller' => 'blogs', 'action' => 'view', $this -> params['id'])); ?>
-<?php $this -> assign('title', __('Gallery')); ?>
+<?php $this->Html->addCrumb(__('Gallery'), array('controller' => 'blogs', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(__('Gallery'), array('controller' => 'blogs', 'action' => 'view', $this -> params['id'])) ?>
+<?php $this -> assign('title', __('Gallery')) ?>
 <section id="slboard_main" class="section">
 <div class="section_top">
 <h2>갤러리</h2>

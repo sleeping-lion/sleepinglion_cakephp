@@ -1,5 +1,5 @@
-<?php $this -> Html -> addCrumb(__('Galleries'), array('controller' => 'galleries', 'action' => 'index')); ?>
-<?php $this -> assign('title', __('Galleries')); ?>
+<?php $this -> Html -> addCrumb(__('Gallery'), array('controller' => 'galleries', 'action' => 'index')); ?>
+<?php $this -> assign('title', __('Gallery')); ?>
 <section id="sl_gallery_index">
 	<article class="table-responsive">
 	<table width="100%" cellpadding="0" cellspacing="0" class="table table-striped">

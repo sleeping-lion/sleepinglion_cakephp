@@ -1,9 +1,9 @@
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(__('Add Blog'), array('controller' => 'blogs', 'action' => 'add')); ?>
-<?php $this -> assign('title', __('Add Blog')); ?>
+<?php $this->Html->addCrumb(__('Guest Book Comment'), array('controller' => 'guest_book_comments', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(__('Add Guest Book Comment'), array('controller' => 'guest_book_comments', 'action' => 'add')) ?>
+<?php $this -> assign('title', __('Add Guest Book Comment')) ?>
 <?php
-echo $this->Form->create('Blog');
+echo $this->Form->create('GuestBookComment');
 echo $this->Form->input('title',array('div'=>array('class'=>'form-group'),'class'=>'form-control'));
-echo $this->Form->input('BlogContent.content',array('div'=>array('class'=>'form-group'),'class'=>'form-control'));
-echo $this->Form->end(array('label'=>__('Save Article'),'div'=>array('class'=>'form-group'),'class'=>'btn btn-primary'));
+echo $this->Form->input('content',array('div'=>array('class'=>'form-group'),'class'=>'form-control'));
+echo $this->Form->end(array('label'=>__('Save Comment'),'div'=>array('class'=>'form-group'),'class'=>'btn btn-primary'));
 ?>

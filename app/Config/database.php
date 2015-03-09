@@ -74,7 +74,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'jjh30750',
-		'database' => 'slhome_production',
+		'database' => 'slhome_development',
 		'prefix' => '',
 		'encoding' => 'utf8'
 	);

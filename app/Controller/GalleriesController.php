@@ -102,7 +102,7 @@ class GalleriesController extends SlController {
 		if ($this -> request -> is('post')) {
 			$this -> Gallery -> create();
 
-			$this -> request -> data['Gallery']['user_id'] = 1;
+			$this -> request -> data['Gallery']['user_id'] = $this -> Auth -> user('id');
 
 			if (empty($this -> request -> data['Gallery']['gallery_category_id']))
 				$this -> request -> data['Gallery']['gallery_category_id'] = 1;
@@ -131,8 +131,7 @@ class GalleriesController extends SlController {
 		}
 
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> request -> data['Gallery']['id'] = $id;
-			$this -> request -> data['Gallery']['user_id'] = $this -> Auth -> user('id');
+			$this -> Gallery -> id = $id;
 			if ($this -> Gallery -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
@@ -154,11 +153,12 @@ class GalleriesController extends SlController {
 	 * @return void
 	 */
 	public function delete($id = null) {
-		$this -> Gallery -> id = $id;
 		if (!$this -> Gallery -> exists()) {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		$this -> request -> allowMethod('post', 'delete');
+		$this -> Gallery -> id = $id;
+				
 		if ($this -> Gallery -> delete()) {
 			$this -> Session -> setFlash(__('The post has been deleted.'), 'success');
 		} else {

@@ -7,7 +7,9 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class BlogComment extends AppModel {
-
+	public $actsAs = array(
+  	'Translate' => array('comment')
+	);
 /**
  * Display field
  *

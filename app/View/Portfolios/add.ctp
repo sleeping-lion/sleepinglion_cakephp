@@ -1,6 +1,6 @@
-<?php $this -> Html -> addCrumb(__('Portfolios'), array('controller' => 'portfolios', 'action' => 'index')); ?>
-<?php $this -> Html -> addCrumb(__('Add Portfolio'), array('controller' => 'Portfolios', 'action' => 'add')); ?>
-<?php $this -> assign('title', __('Add Portfolio')); ?>
+<?php $this -> Html -> addCrumb(__('Portfolio'), array('controller' => 'portfolios', 'action' => 'index')) ?>
+<?php $this -> Html -> addCrumb(__('Add Portfolio'), array('controller' => 'Portfolios', 'action' => 'add')) ?>
+<?php $this -> assign('title', __('Add Portfolio')) ?>
 <?php
 echo $this -> Form -> create('Portfolio', array('type' => 'file'));
 echo $this -> Form -> input('title', array('div' => array('class' => 'form-group'), 'class' => 'form-control'));

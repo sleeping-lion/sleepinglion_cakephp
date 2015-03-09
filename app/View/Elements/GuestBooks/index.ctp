@@ -8,6 +8,8 @@
 			<span class="sl_created_at"><?php echo $this->App->getFormatDate($quest_book['GuestBook']['created_at']) ?></span>				
 		</li>		
 		<?php endforeach ?>
+		<?php unset($guest_books) ?>
+		<?php unset($quest_book) ?>		
   </ul>
   <?php else: ?>
   <p><?php echo __('No Article') ?></p>

@@ -1,6 +1,6 @@
-<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false); ?>
-<?php $this->Html->addCrumb(__('Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(__('Add Blog'), array('controller' => 'blogs', 'action' => 'add')); ?>
+<?php $this -> Html -> script(array('/ckeditor/ckeditor.js','boards/new.js'), false) ?>
+<?php $this->Html->addCrumb(__('Blog'), array('controller' => 'blogs', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(__('Add Blog'), array('controller' => 'blogs', 'action' => 'add')) ?>
 <?php $this -> assign('title', __('Add Blog')); ?>
 <?php
 echo $this->Form->create('Blog',array('type'=>'file')); 

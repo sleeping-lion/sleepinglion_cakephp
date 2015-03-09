@@ -1,13 +1,12 @@
 <?php
 
 final class Group extends AppModel {
-	public $actsAs = array('Acl' => array('type' => 'requester'));
+	public $actsAs = array('Acl' => array('type' => 'requester'),'Translate' => array('title'));
 	public $validate = array('name' => array('rule' => 'notEmpty'));
 
 	public function parentNode() {
 		return null;
 	}
-	
 	/**
 	 * Display field
 	 *

@@ -43,10 +43,10 @@ class FaqCategoriesController extends SlController {
 		if ($this->request->is('post')) {
 			$this->FaqCategory->create();
 			if ($this->FaqCategory->save($this->request->data)) {
-				$this->Session->setFlash(__('The post has been saved.'));
+				$this->Session->setFlash(__('The post has been saved.'),'success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The post could not be saved. Please, try again.'),'error');
 			}
 		}
 	}
@@ -63,11 +63,12 @@ class FaqCategoriesController extends SlController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+			$this->FaqCategory->id = $id;
 			if ($this->FaqCategory->save($this->request->data)) {
-				$this->Session->setFlash(__('The post has been saved.'));
+				$this->Session->setFlash(__('The post has been saved.'),'success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The post could not be saved. Please, try again.'),'error');
 			}
 		} else {
 			$options = array('conditions' => array('FaqCategory.' . $this->FaqCategory->primaryKey => $id));
@@ -83,15 +84,16 @@ class FaqCategoriesController extends SlController {
  * @return void
  */
 	public function delete($id = null) {
-		$this->FaqCategory->id = $id;
+		$this->FaqCategory->id = $id;		
 		if (!$this->FaqCategory->exists()) {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		$this->request->allowMethod('post', 'delete');
+				
 		if ($this->FaqCategory->delete()) {
-			$this->Session->setFlash(__('The post has been deleted.'));
+			$this->Session->setFlash(__('The post has been deleted.'),'success');
 		} else {
-			$this->Session->setFlash(__('The post could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The post could not be deleted. Please, try again.'),'error');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

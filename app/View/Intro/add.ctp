@@ -1,5 +1,5 @@
-<?php $this->Html->addCrumb(_('Intro'), array('controller' => 'galleries', 'action' => 'index')); ?>
-<?php $this->Html->addCrumb(_('new Intro'), array('controller' => 'galleries', 'action' => 'new')); ?>
+<?php $this->Html->addCrumb(_('Intro'), array('controller' => 'galleries', 'action' => 'index')) ?>
+<?php $this->Html->addCrumb(_('new Intro'), array('controller' => 'galleries', 'action' => 'new')) ?>
 <?php
 echo $this->Form->create('Intro');
 echo $this->Form->input('gallery_category_id',array('type'=>'select','div'=>array('class'=>'form-group'),'class'=>'form-control'));
