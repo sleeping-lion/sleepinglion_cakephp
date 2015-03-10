@@ -124,9 +124,8 @@ class FaqsController extends SlController {
 		}
 
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> Faq -> id = $id;
-			//			$this -> request -> data['Faq']['user_id'] = $this -> Auth -> user('id');
-			if ($this -> Faq -> save($this -> request -> data)) {
+			$this -> request -> data['Faq']['id'] = $id;
+			if ($this -> Faq -> saveAll($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
 			} else {

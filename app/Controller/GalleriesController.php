@@ -131,7 +131,7 @@ class GalleriesController extends SlController {
 		}
 
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> Gallery -> id = $id;
+			$this -> request -> data['Gallery']['id'] = $id;
 			if ($this -> Gallery -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));

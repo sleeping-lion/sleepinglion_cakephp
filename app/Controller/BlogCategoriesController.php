@@ -87,7 +87,7 @@ class BlogCategoriesController extends SlController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> BlogCategory -> id = $id;
+			$this -> request -> data['BlogCategory']['id']=$id;
 			if(!empty($this -> request -> data['BlogCategory']['blog_category_id'])) {
 				$this -> request -> data['BlogCategory']['leaf']=true;
 			}			

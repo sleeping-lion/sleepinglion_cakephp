@@ -69,7 +69,7 @@ class NoticesController extends SlController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> Notice -> id = $id;
+			$this -> request -> data['Notice']['id']=$id;
 			if ($this -> Notice -> saveAll($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));

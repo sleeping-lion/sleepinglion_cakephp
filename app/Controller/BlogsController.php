@@ -11,7 +11,7 @@ class BlogsController extends SlController {
 
 	protected function _getCategoriedCategory() {
 		$this -> loadModel('BlogCategory');
-		$blogCategories = $this -> BlogCategory -> find('list', array('fields' => array('BlogCategory.id', 'BlogCategory.title', 'BlogCategory2.title'), 'joins' => array( array('table' => 'blog_categories', 'alias' => 'BlogCategory2', 'type' => 'left', 'conditions' => array('BlogCategory.blog_category_id = BlogCategory2.id', 'BlogCategory2.leaf' => false,'BlogCategory.enable'=>true))), 'conditions' => array('BlogCategory.leaf' => true), 'order' => array('BlogCategory.blog_category_id desc,BlogCategory2.id desc'), 'recursive' => -1));
+		$blogCategories = $this -> BlogCategory -> find('list', array('fields' => array('BlogCategory.id', 'BlogCategory.title', 'BlogCategory2.title'), 'joins' => array( array('table' => 'blog_categories', 'alias' => 'BlogCategory2', 'type' => 'left', 'conditions' => array('BlogCategory.blog_category_id = BlogCategory2.id', 'BlogCategory2.leaf' => false, 'BlogCategory.enable' => true))), 'conditions' => array('BlogCategory.leaf' => true), 'order' => array('BlogCategory.blog_category_id desc,BlogCategory2.id desc'), 'recursive' => -1));
 
 		if (!count($blogCategories))
 			throw new Exception(__('Insert Blog Category First'));
@@ -30,7 +30,7 @@ class BlogsController extends SlController {
 
 	protected function _getCategory() {
 		$this -> loadModel('BlogCategory');
-		$blogCategories = $this -> BlogCategory -> find('list', array('conditions' => array('leaf' => true,'enable'=>true), 'recursive' => -1));
+		$blogCategories = $this -> BlogCategory -> find('list', array('conditions' => array('leaf' => true, 'enable' => true), 'recursive' => -1));
 		if (!count($blogCategories))
 			throw new Exception(__('Insert Blog Category First'));
 
@@ -55,12 +55,12 @@ class BlogsController extends SlController {
 	public function index() {
 		$blogCategories = $this -> _getCategory();
 		if (isset($this -> params['tag'])) {
-			$this->loadModel('Tagging');
-			$ids=$this->Tagging->find('list',array('fields'=>array('Tagging.taggable_id'),'joins'=>array(array('table'=>'tags','alias'=>'Tag','conditions'=>array('Tagging.tag_id=Tag.id'))),'conditions'=>array('Tag.name'=>$this -> params['tag']),'recursive'=>-1));
+			$this -> loadModel('Tagging');
+			$ids = $this -> Tagging -> find('list', array('fields' => array('Tagging.taggable_id'), 'joins' => array( array('table' => 'tags', 'alias' => 'Tag', 'conditions' => array('Tagging.tag_id=Tag.id'))), 'conditions' => array('Tag.name' => $this -> params['tag']), 'recursive' => -1));
 
 			$this -> setSearch('Blog');
-			$conditions= array('Blog.id' =>$ids);
-			$blog_category_id=null;
+			$conditions = array('Blog.id' => $ids);
+			$blog_category_id = null;
 			// @meta_keywords=params[:tag]+','+t(:meta_keywords)
 		} else {
 			if (isset($this -> request -> query['id'])) {
@@ -77,19 +77,19 @@ class BlogsController extends SlController {
 					$blog_category_id = key($blogCategories);
 				}
 
-			//	$blog = $this -> Blog -> find('first', array('conditions' => array('Blog.blog_category_id' => $blog_category_id)));
+				//	$blog = $this -> Blog -> find('first', array('conditions' => array('Blog.blog_category_id' => $blog_category_id)));
 			}
-			$conditions=array('Blog.blog_category_id' => $blog_category_id);
+			$conditions = array('Blog.blog_category_id' => $blog_category_id);
 		}
 
 		$this -> Blog -> recursive = 0;
 		$this -> setSearch('Blog');
 		$this -> paginate = array('conditions' => $conditions, 'order' => 'Blog.id desc');
-		
+
 		$this -> set('blogs', $this -> Paginator -> paginate());
 		$this -> set('blogCategoryId', $blog_category_id);
 		if (isset($blog)) {
-			$this -> set('blog', $blog);	
+			$this -> set('blog', $blog);
 		}
 		//$this->render('index_default');
 	}
@@ -121,9 +121,9 @@ class BlogsController extends SlController {
 		$this -> set('blogComments', $this -> Paginator -> paginate('BlogComment', array('blog_id' => $blog['Blog']['id'])));
 	}
 
-	protected function saveTaggins($post_id,$tags) {
+	protected function saveTaggins($post_id, $tags) {
 		$this -> loadModel('Tag');
-		$tag_a = explode(',',$tags);
+		$tag_a = explode(',', $tags);
 		$tag_a = array_unique($tag_a);
 
 		$taggings = array();
@@ -131,15 +131,15 @@ class BlogsController extends SlController {
 		foreach ($tag_a as $index => $value) {
 			if ($this -> Tag -> find('count', array('conditions' => array('name' => $value)))) {
 				$tag_e = $this -> Tag -> find('first', array('conditions' => array('name' => $value)));
-				$taggings[] = array('taggable_id'=>$post_id,'tag_id'=>$tag_e['Tag']['id'],'taggable_type'=>'Blog','context'=>'tags');
+				$taggings[] = array('taggable_id' => $post_id, 'tag_id' => $tag_e['Tag']['id'], 'taggable_type' => 'Blog', 'context' => 'tags');
 			} else {
 				$this -> Tag -> save(array('Tag' => array('name' => $value)));
-				$taggings[] = array('taggable_id'=>$post_id,'tag_id'=>$this -> Tag -> getLastInsertID(),'taggable_type'=>'Blog','context'=>'tags');
+				$taggings[] = array('taggable_id' => $post_id, 'tag_id' => $this -> Tag -> getLastInsertID(), 'taggable_type' => 'Blog', 'context' => 'tags');
 			}
 		}
-		
+
 		$this -> loadModel('Tagging');
-		return $this->Tagging->saveAll($taggings);
+		return $this -> Tagging -> saveAll($taggings);
 	}
 
 	/**
@@ -150,11 +150,11 @@ class BlogsController extends SlController {
 	public function add() {
 		if ($this -> request -> is('post')) {
 			$this -> Blog -> create();
-			$tags=$this -> request -> data['Tag']['tags'];
+			$tags = $this -> request -> data['Tag']['tags'];
 			unset($this -> request -> data['Tag']);
-			
+
 			if ($this -> Blog -> saveAll($this -> request -> data)) {
-				$this -> saveTaggins($this -> Blog -> getLastInsertID(),$tags);
+				$this -> saveTaggins($this -> Blog -> getLastInsertID(), $tags);
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
 			} else {
@@ -177,7 +177,7 @@ class BlogsController extends SlController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> Blog -> id = $id;
+			$this -> request -> data['Blog']['id'] = $id;
 			if ($this -> Blog -> saveAll($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
@@ -214,13 +214,14 @@ class BlogsController extends SlController {
 	}
 
 	/**
- * index method
- *
- * @return void
- */
+	 * index method
+	 *
+	 * @return void
+	 */
 	public function admin_index() {
-		$this->layout='admin';
-		$this->Blog->recursive = 0;
-		$this->set('blogs', $this->Paginator->paginate());
+		$this -> layout = 'admin';
+		$this -> Blog -> recursive = 0;
+		$this -> set('blogs', $this -> Paginator -> paginate());
 	}
+
 }

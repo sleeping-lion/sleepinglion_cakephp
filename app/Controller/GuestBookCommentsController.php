@@ -63,6 +63,7 @@ class GuestBookCommentsController extends SlAnonController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
+			$this -> request -> data['GuestBookComment']['id'] = $id;
 			if ($this -> GuestBookComment -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));

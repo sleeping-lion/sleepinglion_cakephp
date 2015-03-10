@@ -80,7 +80,7 @@ class QuestionsController extends SlAnonController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
-			$this -> Question -> id = $id;
+			$this -> request -> data['Question']['id'] = $id;
 			if ($this -> Question -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The post has been saved.'), 'success');
 				return $this -> redirect(array('action' => 'index'));
